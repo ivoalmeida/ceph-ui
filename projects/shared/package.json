@@ -1,0 +1,24 @@
+{
+  "name": "shared",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "dependencies": {
+    "@angular/forms": "^18.2.13",
+    "@angular/router": "^18.2.13",
+    "@carbon/icons": "^11.41.0",
+    "@carbon/styles": "^1.57.0",
+    "@ng-bootstrap/ng-bootstrap": "^17.0.1",
+    "@ngx-formly/bootstrap": "^6.1.1",
+    "@ngx-formly/core": "^6.1.1",
+    "carbon-components-angular": "^5.56.2",
+    "lodash": "^4.17.21",
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/lodash": "^4.17.17"
+  }
+}

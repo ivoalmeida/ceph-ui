@@ -16,6 +16,14 @@
     "declaration": false,
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["projects/shared/src/lib/*"],
+      "@components": ["projects/example-project/src/components"],
+      "shared": [
+        "./dist/shared"
+      ]
+    },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
