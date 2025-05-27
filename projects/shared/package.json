@@ -6,6 +6,7 @@
     "@angular/core": "^18.2.0"
   },
   "dependencies": {
+    "@angular/cdk": "^18.2.13",
     "@angular/forms": "^18.2.13",
     "@angular/router": "^18.2.13",
     "@carbon/icons": "^11.41.0",
@@ -15,6 +16,8 @@
     "@ngx-formly/core": "^6.1.1",
     "carbon-components-angular": "^5.56.2",
     "lodash": "^4.17.21",
+    "ng-click-outside": "^9.0.0",
+    "simplebar-angular": "^3.2.6",
     "tslib": "^2.3.0"
   },
   "sideEffects": false,

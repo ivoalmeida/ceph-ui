@@ -20,10 +20,15 @@
     "@angular/router": "^18.2.13",
     "@carbon/icons": "^11.41.0",
     "@carbon/styles": "^1.57.0",
-    "@ng-bootstrap/ng-bootstrap": "^17.0.1",
     "@ngx-formly/bootstrap": "^6.1.1",
     "@ngx-formly/core": "^6.1.1",
+    "async-mutex": "^0.2.4",
     "carbon-components-angular": "^5.56.2",
+    "detect-browser": "^5.2.0",
+    "moment": "^2.29.4",
+    "ng-block-ui": "^4.0.1",
+    "ng2-charts": "^7.0.0",
+    "ngx-toastr": "^17.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -41,5 +46,9 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.2.0",
     "typescript": "~5.5.2"
+  },
+  "peerDependencies": {
+    "@angular/cdk": "^18.2.13",
+    "@ng-bootstrap/ng-bootstrap": "^17.0.1"
   }
 }

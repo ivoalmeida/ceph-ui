@@ -2,6 +2,6 @@
  * Public API Surface of shared
  */
 
-export * from './lib/shared.service';
-export * from './lib/shared.component';
-export * from './lib/shared.module';
+// export * from './lib/shared.module';
+// export * from './lib/models/breadcrumbs';
+export * from './lib/components/components.module';
