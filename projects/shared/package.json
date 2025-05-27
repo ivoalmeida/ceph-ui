@@ -1,0 +1,58 @@
+{
+  "name": "@ceph-ui/shared",
+  "private": false,
+  "version": "0.0.2",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": {
+    "name": "Ivo Almeida",
+    "email": "ivo.l.almeida@ibm.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ivoalmeida/ceph-ui.git"
+  },
+  "main": "fesm2022/ceph-ui-shared.mjs",
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "rxjs": "~7.5.0",
+    "zone.js": "^0.14.10"
+  },
+  "dependencies": {
+    "@angular/cdk": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "@carbon/icons": "^11.41.0",
+    "@carbon/styles": "^1.57.0",
+    "@ng-bootstrap/ng-bootstrap": "^17.0.1",
+    "@ngx-formly/bootstrap": "^6.1.1",
+    "@ngx-formly/core": "^6.1.1",
+    "carbon-components-angular": "^5.56.2",
+    "lodash": "^4.17.21",
+    "ng-click-outside": "^9.0.0",
+    "simplebar-angular": "^3.2.6",
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/lodash": "^4.17.17"
+  },
+  "_moduleAliases": {
+    "~/*": "./lib/*",
+    "@api/*": "./lib/api/*",
+    "@classes/*": "./lib/classes/*",
+    "@components/*": "./lib/components/*",
+    "@constants/*": "./lib/constants/*",
+    "@datatable/*": "./lib/datatable/*",
+    "@decorators/*": "./lib/decorators/*",
+    "@directives/*": "./lib/directives/*",
+    "@enum/*": "./lib/enum/*",
+    "@forms/*": "./lib/forms/*",
+    "@models/*": "./lib/models/*",
+    "@pipes/*": "./lib/pipes/*",
+    "@services/*": "./lib/services/*",
+    "@testing/*": "./lib/testing/*"
+  }
+}
