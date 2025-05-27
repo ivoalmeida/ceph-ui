@@ -4,8 +4,8 @@ import _ from 'lodash';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-import { SettingsService } from '../api/settings.service';
-import { CdPwdPolicySettings } from '../models/cd-pwd-policy-settings';
+import { SettingsService } from '@api/settings.service';
+import { CdPwdPolicySettings } from '@models/cd-pwd-policy-settings';
 
 @Injectable({
   providedIn: 'root'

@@ -6,7 +6,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { Observable } from 'rxjs';
 
 import { configureTestBed } from '~/testing/unit-test-helper';
-import { FinishedTask } from '../models/finished-task';
+import { FinishedTask } from '@models/finished-task';
 import { SharedModule } from '../shared.module';
 import { NotificationService } from './notification.service';
 import { SummaryService } from './summary.service';

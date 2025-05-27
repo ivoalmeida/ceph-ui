@@ -4,8 +4,8 @@ import { Step } from 'carbon-components-angular';
 import * as _ from 'lodash';
 import { Observable, Subscription } from 'rxjs';
 
-import { WizardStepModel } from '~/app/shared/models/wizard-steps';
-import { WizardStepsService } from '~/app/shared/services/wizard-steps.service';
+import { WizardStepModel } from '@models/wizard-steps';
+import { WizardStepsService } from '@services/wizard-steps.service';
 
 @Component({
   selector: 'cd-wizard',

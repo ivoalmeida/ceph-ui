@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { CdValidators } from '~/app/shared/forms/cd-validators';
-import { SharedModule } from '~/app/shared/shared.module';
+import { CdValidators } from '@forms/cd-validators';
+import { SharedModule } from '@shared.module';
 import { configureTestBed, FixtureHelper, FormHelper } from '~/testing/unit-test-helper';
 import { FormModalComponent } from './form-modal.component';
 import {

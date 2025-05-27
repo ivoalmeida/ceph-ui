@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 
 import _ from 'lodash';
 
-import { ExecutingTask } from '../models/executing-task';
-import { FinishedTask } from '../models/finished-task';
-import { Task } from '../models/task';
+import { ExecutingTask } from '@models/executing-task';
+import { FinishedTask } from '@models/finished-task';
+import { Task } from '@models/task';
 import { SummaryService } from './summary.service';
 
 class TaskSubscription {

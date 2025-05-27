@@ -7,12 +7,12 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import _ from 'lodash';
 
-import { ComponentsModule } from '~/app/shared/components/components.module';
-import { CellTemplate } from '~/app/shared/enum/cell-template.enum';
-import { CdTableColumnFilter } from '~/app/shared/models/cd-table-column-filter';
-import { CdTableFetchDataContext } from '~/app/shared/models/cd-table-fetch-data-context';
-import { CdTableSelection } from '~/app/shared/models/cd-table-selection';
-import { PipesModule } from '~/app/shared/pipes/pipes.module';
+import { ComponentsModule } from '@components/components.module';
+import { CellTemplate } from '@enum/cell-template.enum';
+import { CdTableColumnFilter } from '@models/cd-table-column-filter';
+import { CdTableFetchDataContext } from '@models/cd-table-fetch-data-context';
+import { CdTableSelection } from '@models/cd-table-selection';
+import { PipesModule } from '@pipes/pipes.module';
 import { configureTestBed } from '~/testing/unit-test-helper';
 import { TablePaginationComponent } from '../table-pagination/table-pagination.component';
 import { TableComponent } from './table.component';

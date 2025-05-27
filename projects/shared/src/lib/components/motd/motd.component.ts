@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 
-import { Motd } from '~/app/shared/api/motd.service';
-import { MotdNotificationService } from '~/app/shared/services/motd-notification.service';
+import { Motd } from '@api/motd.service';
+import { MotdNotificationService } from '@services/motd-notification.service';
 
 @Component({
   selector: 'cd-motd',

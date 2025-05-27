@@ -2,8 +2,8 @@ import { AbstractControl } from '@angular/forms';
 
 import _ from 'lodash';
 
-import { CrushNode } from '../models/crush-node';
-import { CrushFailureDomains } from '../models/erasure-code-profile';
+import { CrushNode } from '@models/crush-node';
+import { CrushFailureDomains } from '@models/erasure-code-profile';
 
 export class CrushNodeSelectionClass {
   private nodes: CrushNode[] = [];

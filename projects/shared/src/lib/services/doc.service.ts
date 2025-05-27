@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Subscription } from 'rxjs';
 import { filter, first, map } from 'rxjs/operators';
 
-import { CephReleaseNamePipe } from '../pipes/ceph-release-name.pipe';
+import { CephReleaseNamePipe } from '@pipes/ceph-release-name.pipe';
 import { SummaryService } from './summary.service';
 
 @Injectable({

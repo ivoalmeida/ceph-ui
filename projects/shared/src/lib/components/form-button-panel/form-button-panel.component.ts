@@ -2,10 +2,10 @@ import { Location } from '@angular/common';
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { UntypedFormGroup, NgForm } from '@angular/forms';
 
-import { ActionLabelsI18n } from '~/app/shared/constants/app.constants';
-import { ModalService } from '~/app/shared/services/modal.service';
+import { ActionLabelsI18n } from '@constants/app.constants';
+import { ModalService } from '@services/modal.service';
 import { SubmitButtonComponent } from '../submit-button/submit-button.component';
-import { ModalCdsService } from '../../services/modal-cds.service';
+import { ModalCdsService } from '@services/modal-cds.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

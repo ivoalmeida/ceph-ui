@@ -1,4 +1,4 @@
-import { FormatterService } from '../services/formatter.service';
+import { FormatterService } from '@services/formatter.service';
 import { DimlessBinaryPipe } from './dimless-binary.pipe';
 
 describe('DimlessBinaryPipe', () => {

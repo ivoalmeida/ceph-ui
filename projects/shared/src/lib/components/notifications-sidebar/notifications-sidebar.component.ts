@@ -13,23 +13,23 @@ import _ from 'lodash';
 import moment from 'moment';
 import { Subscription } from 'rxjs';
 
-import { PrometheusService } from '~/app/shared/api/prometheus.service';
-import { SucceededActionLabelsI18n } from '~/app/shared/constants/app.constants';
-import { Icons } from '~/app/shared/enum/icons.enum';
-import { NotificationType } from '~/app/shared/enum/notification-type.enum';
+import { PrometheusService } from '@api/prometheus.service';
+import { SucceededActionLabelsI18n } from '@constants/app.constants';
+import { Icons } from '@enum/icons.enum';
+import { NotificationType } from '@enum/notification-type.enum';
 import {
   AlertmanagerSilence,
   AlertmanagerSilenceMatcher
-} from '~/app/shared/models/alertmanager-silence';
-import { CdNotification } from '~/app/shared/models/cd-notification';
-import { ExecutingTask } from '~/app/shared/models/executing-task';
-import { FinishedTask } from '~/app/shared/models/finished-task';
-import { AuthStorageService } from '~/app/shared/services/auth-storage.service';
-import { NotificationService } from '~/app/shared/services/notification.service';
-import { PrometheusAlertService } from '~/app/shared/services/prometheus-alert.service';
-import { PrometheusNotificationService } from '~/app/shared/services/prometheus-notification.service';
-import { SummaryService } from '~/app/shared/services/summary.service';
-import { TaskMessageService } from '~/app/shared/services/task-message.service';
+} from '@models/alertmanager-silence';
+import { CdNotification } from '@models/cd-notification';
+import { ExecutingTask } from '@models/executing-task';
+import { FinishedTask } from '@models/finished-task';
+import { AuthStorageService } from '@services/auth-storage.service';
+import { NotificationService } from '@services/notification.service';
+import { PrometheusAlertService } from '@services/prometheus-alert.service';
+import { PrometheusNotificationService } from '@services/prometheus-notification.service';
+import { SummaryService } from '@services/summary.service';
+import { TaskMessageService } from '@services/task-message.service';
 
 @Component({
   selector: 'cd-notifications-sidebar',

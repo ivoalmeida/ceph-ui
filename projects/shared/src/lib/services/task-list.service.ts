@@ -2,8 +2,8 @@ import { Injectable, OnDestroy } from '@angular/core';
 
 import { Observable, Subscription } from 'rxjs';
 
-import { ExecutingTask } from '../models/executing-task';
-import { Summary } from '../models/summary.model';
+import { ExecutingTask } from '@models/executing-task';
+import { Summary } from '@models/summary.model';
 import { SummaryService } from './summary.service';
 import { TaskMessageService } from './task-message.service';
 

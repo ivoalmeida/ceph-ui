@@ -5,7 +5,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FieldArrayType } from '@ngx-formly/core';
 import { forEach } from 'lodash';
-import { Icons } from '~/app/shared/enum/icons.enum';
+import { Icons } from '@enum/icons.enum';
 
 @Component({
   selector: 'cd-formly-array-type',

@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import moment from 'moment';
 
-import { CdDevice } from '../models/devices';
+import { CdDevice } from '@models/devices';
 import { DeviceService } from './device.service';
 
 describe('DeviceService', () => {

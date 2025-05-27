@@ -10,9 +10,9 @@ import _ from 'lodash';
 import { Observable, of as observableOf, timer as observableTimer } from 'rxjs';
 import { map, switchMapTo, take } from 'rxjs/operators';
 
-import { RgwBucketService } from '~/app/shared/api/rgw-bucket.service';
-import { DimlessBinaryPipe } from '~/app/shared/pipes/dimless-binary.pipe';
-import { FormatterService } from '~/app/shared/services/formatter.service';
+import { RgwBucketService } from '@api/rgw-bucket.service';
+import { DimlessBinaryPipe } from '@pipes/dimless-binary.pipe';
+import { FormatterService } from '@services/formatter.service';
 import validator from 'validator';
 
 export function isEmptyInputValue(value: any): boolean {

@@ -3,7 +3,7 @@ import { Component, HostListener, Input } from '@angular/core';
 import { detect } from 'detect-browser';
 import { ToastrService } from 'ngx-toastr';
 
-import { Icons } from '~/app/shared/enum/icons.enum';
+import { Icons } from '@enum/icons.enum';
 
 @Component({
   selector: 'cd-copy-2-clipboard-button',

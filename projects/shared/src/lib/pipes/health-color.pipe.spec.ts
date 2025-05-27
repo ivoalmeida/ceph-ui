@@ -1,5 +1,5 @@
-import { CssHelper } from '~/app/shared/classes/css-helper';
-import { HealthColorPipe } from '~/app/shared/pipes/health-color.pipe';
+import { CssHelper } from '@classes/css-helper';
+import { HealthColorPipe } from '@pipes/health-color.pipe';
 
 class CssHelperStub extends CssHelper {
   propertyValue(propertyName: string) {

@@ -4,7 +4,7 @@ import {
   RbdConfigurationExtraField,
   RbdConfigurationSection,
   RbdConfigurationType
-} from '../models/configuration';
+} from '@models/configuration';
 
 /**
  * Define here which options should be made available under which section heading.

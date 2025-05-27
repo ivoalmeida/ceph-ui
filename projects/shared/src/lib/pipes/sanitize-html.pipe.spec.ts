@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { DomSanitizer } from '@angular/platform-browser';
 
-import { SanitizeHtmlPipe } from '~/app/shared/pipes/sanitize-html.pipe';
+import { SanitizeHtmlPipe } from '@pipes/sanitize-html.pipe';
 import { configureTestBed } from '~/testing/unit-test-helper';
 
 describe('SanitizeHtmlPipe', () => {

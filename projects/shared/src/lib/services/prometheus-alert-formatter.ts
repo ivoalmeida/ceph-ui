@@ -2,14 +2,14 @@ import { Injectable } from '@angular/core';
 
 import _ from 'lodash';
 
-import { Icons } from '../enum/icons.enum';
-import { NotificationType } from '../enum/notification-type.enum';
-import { CdNotificationConfig } from '../models/cd-notification';
+import { Icons } from '@enum/icons.enum';
+import { NotificationType } from '@enum/notification-type.enum';
+import { CdNotificationConfig } from '@models/cd-notification';
 import {
   AlertmanagerAlert,
   AlertmanagerNotificationAlert,
   PrometheusCustomAlert
-} from '../models/prometheus-alerts';
+} from '@models/prometheus-alerts';
 import { NotificationService } from './notification.service';
 
 @Injectable({

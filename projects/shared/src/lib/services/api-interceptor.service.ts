@@ -12,10 +12,10 @@ import _ from 'lodash';
 import { Observable, throwError as observableThrowError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { CdHelperClass } from '~/app/shared/classes/cd-helper.class';
-import { NotificationType } from '../enum/notification-type.enum';
-import { CdNotificationConfig } from '../models/cd-notification';
-import { FinishedTask } from '../models/finished-task';
+import { CdHelperClass } from '@classes/cd-helper.class';
+import { NotificationType } from '@enum/notification-type.enum';
+import { CdNotificationConfig } from '@models/cd-notification';
+import { FinishedTask } from '@models/finished-task';
 import { NotificationService } from './notification.service';
 import { AuthStorageService } from './auth-storage.service';
 import { CookiesService } from './cookie.service';

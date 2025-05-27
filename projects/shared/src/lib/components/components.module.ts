@@ -38,9 +38,9 @@ import {
   ProgressIndicatorModule
 } from 'carbon-components-angular';
 
-import { MotdComponent } from '~/app/shared/components/motd/motd.component';
-import { DirectivesModule } from '../directives/directives.module';
-import { PipesModule } from '../pipes/pipes.module';
+import { MotdComponent } from '@components/motd/motd.component';
+import { DirectivesModule } from '@directives/directives.module';
+import { PipesModule } from '@pipes/pipes.module';
 import { AlertPanelComponent } from './alert-panel/alert-panel.component';
 import { BackButtonComponent } from './back-button/back-button.component';
 import { CdLabelComponent } from './cd-label/cd-label.component';

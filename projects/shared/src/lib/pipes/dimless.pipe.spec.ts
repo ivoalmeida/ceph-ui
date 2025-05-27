@@ -1,4 +1,4 @@
-import { FormatterService } from '../services/formatter.service';
+import { FormatterService } from '@services/formatter.service';
 import { DimlessPipe } from './dimless.pipe';
 
 describe('DimlessPipe', () => {

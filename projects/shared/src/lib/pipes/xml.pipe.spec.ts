@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { configureTestBed } from '~/testing/unit-test-helper';
-import { JsonToXmlService } from '../services/json-to-xml.service';
+import { JsonToXmlService } from '@services/json-to-xml.service';
 import { XmlPipe } from './xml.pipe';
 
 describe('XmlPipe', () => {

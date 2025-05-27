@@ -9,7 +9,7 @@ import { FormButtonPanelComponent } from '../form-button-panel/form-button-panel
 import { ModalComponent } from '../modal/modal.component';
 import { SubmitButtonComponent } from '../submit-button/submit-button.component';
 import { ConfirmationModalComponent } from './confirmation-modal.component';
-import { ModalCdsService } from '../../services/modal-cds.service';
+import { ModalCdsService } from '@services/modal-cds.service';
 import { ModalService, PlaceholderService } from 'carbon-components-angular';
 
 @NgModule({})

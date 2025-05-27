@@ -4,13 +4,13 @@ import { FormControl, UntypedFormControl, Validators } from '@angular/forms';
 import _ from 'lodash';
 import { of as observableOf } from 'rxjs';
 
-import { RgwBucketService } from '~/app/shared/api/rgw-bucket.service';
-import { CdFormGroup } from '~/app/shared/forms/cd-form-group';
-import { CdValidators, DUE_TIMER } from '~/app/shared/forms/cd-validators';
+import { RgwBucketService } from '@api/rgw-bucket.service';
+import { CdFormGroup } from '@forms/cd-form-group';
+import { CdValidators, DUE_TIMER } from '@forms/cd-validators';
 import { FormHelper } from '~/testing/unit-test-helper';
 
 let mockBucketExists = observableOf(true);
-jest.mock('~/app/shared/api/rgw-bucket.service', () => {
+jest.mock(@api/rgw-bucket.service', () => {
   return {
     RgwBucketService: jest.fn().mockImplementation(() => {
       return {

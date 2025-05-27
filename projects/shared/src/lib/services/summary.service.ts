@@ -5,8 +5,8 @@ import _ from 'lodash';
 import { BehaviorSubject, Observable, Subscription } from 'rxjs';
 import { filter, first } from 'rxjs/operators';
 
-import { ExecutingTask } from '../models/executing-task';
-import { Summary } from '../models/summary.model';
+import { ExecutingTask } from '@models/executing-task';
+import { Summary } from '@models/summary.model';
 import { TimerService } from './timer.service';
 
 @Injectable({

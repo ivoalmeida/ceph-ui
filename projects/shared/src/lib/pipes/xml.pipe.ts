@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { JsonToXmlService } from '../services/json-to-xml.service';
+import { JsonToXmlService } from '@services/json-to-xml.service';
 
 @Pipe({
   name: 'xml'

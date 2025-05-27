@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { BehaviorSubject, Observable } from 'rxjs';
 
-import { WizardStepModel } from '~/app/shared/models/wizard-steps';
+import { WizardStepModel } from '@models/wizard-steps';
 
 const initialStep = [{ stepIndex: 0, isComplete: false }];
 

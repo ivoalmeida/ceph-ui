@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { DataGatewayService } from '~/app/shared/services/data-gateway.service';
-import { TaskWrapperService } from '~/app/shared/services/task-wrapper.service';
-import { FinishedTask } from '~/app/shared/models/finished-task';
+import { DataGatewayService } from '@services/data-gateway.service';
+import { TaskWrapperService } from '@services/task-wrapper.service';
+import { FinishedTask } from '@models/finished-task';
 import { Location } from '@angular/common';
 import { UntypedFormGroup } from '@angular/forms';
 import { mergeMap } from 'rxjs/operators';
 import { CrudTaskInfo, JsonFormUISchema } from './crud-form.model';
 import { Observable } from 'rxjs';
 import _ from 'lodash';
-import { CdTableSelection } from '../../models/cd-table-selection';
+import { CdTableSelection } from '@models/cd-table-selection';
 
 @Component({
   selector: 'cd-crud-form',

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import _ from 'lodash';
 
-import { Components } from '../enum/components.enum';
-import { FinishedTask } from '../models/finished-task';
-import { ImageSpec } from '../models/image-spec';
-import { Task } from '../models/task';
-import { PluralizePipe } from '../pipes/pluralize.pipe';
+import { Components } from '@enum/components.enum';
+import { FinishedTask } from '@models/finished-task';
+import { ImageSpec } from '@models/image-spec';
+import { Task } from '@models/task';
+import { PluralizePipe } from '@pipes/pluralize.pipe';
 
 export class TaskMessageOperation {
   running: string;

@@ -2,9 +2,9 @@ import { Injectable } from '@angular/core';
 
 import _ from 'lodash';
 
-import { PrometheusService } from '../api/prometheus.service';
-import { CdNotificationConfig } from '../models/cd-notification';
-import { AlertmanagerNotification } from '../models/prometheus-alerts';
+import { PrometheusService } from '@api/prometheus.service';
+import { CdNotificationConfig } from '@models/cd-notification';
+import { AlertmanagerNotification } from '@models/prometheus-alerts';
 import { PrometheusAlertFormatter } from './prometheus-alert-formatter';
 
 @Injectable({

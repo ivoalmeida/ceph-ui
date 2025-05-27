@@ -2,7 +2,7 @@ import { ErrorHandler, Injectable, Injector } from '@angular/core';
 import { Router } from '@angular/router';
 
 import { DashboardError } from '~/app/core/error/error';
-import { LoggingService } from '../api/logging.service';
+import { LoggingService } from '@api/logging.service';
 
 @Injectable()
 export class JsErrorHandler implements ErrorHandler {

@@ -1,6 +1,6 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { FieldType, FieldTypeConfig } from '@ngx-formly/core';
-import { TextAreaJsonFormatterService } from '~/app/shared/services/text-area-json-formatter.service';
+import { TextAreaJsonFormatterService } from '@services/text-area-json-formatter.service';
 
 @Component({
   selector: 'cd-formly-textarea-type',

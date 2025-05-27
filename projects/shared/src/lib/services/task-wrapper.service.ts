@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 
 import { Observable, Subscriber } from 'rxjs';
 
-import { NotificationType } from '../enum/notification-type.enum';
-import { CdNotificationConfig } from '../models/cd-notification';
-import { ExecutingTask } from '../models/executing-task';
-import { FinishedTask } from '../models/finished-task';
+import { NotificationType } from '@enum/notification-type.enum';
+import { CdNotificationConfig } from '@models/cd-notification';
+import { ExecutingTask } from '@models/executing-task';
+import { FinishedTask } from '@models/finished-task';
 import { NotificationService } from './notification.service';
 import { SummaryService } from './summary.service';
 import { TaskManagerService } from './task-manager.service';

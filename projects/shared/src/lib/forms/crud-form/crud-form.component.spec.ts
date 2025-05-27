@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { configureTestBed } from '~/testing/unit-test-helper';
-import { CdDatePipe } from '~/app/shared/pipes/cd-date.pipe';
+import { CdDatePipe } from '@pipes/cd-date.pipe';
 import { CrudFormComponent } from './crud-form.component';
 import { RouterTestingModule } from '@angular/router/testing';
 

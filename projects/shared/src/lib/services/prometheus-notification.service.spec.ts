@@ -5,10 +5,10 @@ import { ToastrModule, ToastrService } from 'ngx-toastr';
 import { of, throwError } from 'rxjs';
 
 import { configureTestBed, PrometheusHelper } from '~/testing/unit-test-helper';
-import { PrometheusService } from '../api/prometheus.service';
-import { NotificationType } from '../enum/notification-type.enum';
-import { CdNotificationConfig } from '../models/cd-notification';
-import { AlertmanagerNotification } from '../models/prometheus-alerts';
+import { PrometheusService } from '@api/prometheus.service';
+import { NotificationType } from '@enum/notification-type.enum';
+import { CdNotificationConfig } from '@models/cd-notification';
+import { AlertmanagerNotification } from '@models/prometheus-alerts';
 import { SharedModule } from '../shared.module';
 import { NotificationService } from './notification.service';
 import { PrometheusAlertFormatter } from './prometheus-alert-formatter';

@@ -4,18 +4,18 @@ import { ActivatedRoute, Router } from '@angular/router';
 import _ from 'lodash';
 import { Observable } from 'rxjs';
 
-import { CrudMetadata } from '~/app/shared/models/crud-table-metadata';
-import { DataGatewayService } from '~/app/shared/services/data-gateway.service';
-import { TimerService } from '~/app/shared/services/timer.service';
-import { CephUserService } from '../../api/ceph-user.service';
-import { ConfirmationModalComponent } from '../../components/confirmation-modal/confirmation-modal.component';
-import { CdTableSelection } from '../../models/cd-table-selection';
-import { FinishedTask } from '../../models/finished-task';
-import { Permission, Permissions } from '../../models/permissions';
-import { AuthStorageService } from '../../services/auth-storage.service';
-import { TaskWrapperService } from '../../services/task-wrapper.service';
-import { DeleteConfirmationModalComponent } from '../../components/delete-confirmation-modal/delete-confirmation-modal.component';
-import { ModalCdsService } from '../../services/modal-cds.service';
+import { CrudMetadata } from '@models/crud-table-metadata';
+import { DataGatewayService } from '@services/data-gateway.service';
+import { TimerService } from '@services/timer.service';
+import { CephUserService } from '@api/ceph-user.service';
+import { ConfirmationModalComponent } from '@components/confirmation-modal/confirmation-modal.component';
+import { CdTableSelection } from '@models/cd-table-selection';
+import { FinishedTask } from '@models/finished-task';
+import { Permission, Permissions } from '@models/permissions';
+import { AuthStorageService } from '@services/auth-storage.service';
+import { TaskWrapperService } from '@services/task-wrapper.service';
+import { DeleteConfirmationModalComponent } from '@components/delete-confirmation-modal/delete-confirmation-modal.component';
+import { ModalCdsService } from '@services/modal-cds.service';
 import { BaseModal } from 'carbon-components-angular';
 
 @Component({

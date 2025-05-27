@@ -5,8 +5,8 @@ import { ActivatedRouteSnapshot, Router } from '@angular/router';
 import { of as observableOf } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
-import { MgrModuleService } from '~/app/shared/api/mgr-module.service';
-import { Icons } from '~/app/shared/enum/icons.enum';
+import { MgrModuleService } from '@api/mgr-module.service';
+import { Icons } from '@enum/icons.enum';
 
 /**
  * This service checks if a route can be activated by executing a

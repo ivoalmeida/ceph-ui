@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { HealthIcon } from '../enum/health-icon.enum';
+import { HealthIcon } from '@enum/health-icon.enum';
 
 @Pipe({
   name: 'healthIcon'

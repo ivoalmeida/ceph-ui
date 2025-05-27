@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SharedModule } from '~/app/shared/shared.module';
+import { SharedModule } from '@shared.module';
 import { configureTestBed } from '~/testing/unit-test-helper';
 import { WizardComponent } from './wizard.component';
 

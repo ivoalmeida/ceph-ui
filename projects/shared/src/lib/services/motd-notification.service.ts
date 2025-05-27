@@ -4,7 +4,7 @@ import * as _ from 'lodash';
 import { BehaviorSubject, EMPTY, Observable, of, Subscription } from 'rxjs';
 import { catchError, delay, mergeMap, repeat, tap } from 'rxjs/operators';
 
-import { Motd, MotdService } from '~/app/shared/api/motd.service';
+import { Motd, MotdService } from '@api/motd.service';
 import { whenPageVisible } from '../rxjs/operators/page-visibility.operator';
 
 @Injectable({

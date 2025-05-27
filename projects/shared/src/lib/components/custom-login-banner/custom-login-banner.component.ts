@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import _ from 'lodash';
 import { Observable } from 'rxjs';
 
-import { CustomLoginBannerService } from '~/app/shared/api/custom-login-banner.service';
+import { CustomLoginBannerService } from '@api/custom-login-banner.service';
 
 @Component({
   selector: 'cd-custom-login-banner',

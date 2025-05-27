@@ -7,8 +7,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { NgbDropdownModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 
-import { ComponentsModule } from '~/app/shared/components/components.module';
-import { PipesModule } from '~/app/shared/pipes/pipes.module';
+import { ComponentsModule } from '@components/components.module';
+import { PipesModule } from '@pipes/pipes.module';
 import { configureTestBed } from '~/testing/unit-test-helper';
 import { TableKeyValueComponent } from '../table-key-value/table-key-value.component';
 import { TablePaginationComponent } from '../table-pagination/table-pagination.component';

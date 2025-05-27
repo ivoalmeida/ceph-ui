@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 
 import moment from 'moment';
 
-import { CdDevice } from '../models/devices';
+import { CdDevice } from '@models/devices';
 
 @Injectable({
   providedIn: 'root'

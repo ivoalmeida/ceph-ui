@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Icons } from '~/app/shared/enum/icons.enum';
+import { Icons } from '@enum/icons.enum';
 
 @Component({
   selector: 'cd-loading-panel',

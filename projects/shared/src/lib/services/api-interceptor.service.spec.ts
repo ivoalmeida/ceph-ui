@@ -7,8 +7,8 @@ import { ToastrService } from 'ngx-toastr';
 
 import { AppModule } from '~/app/app.module';
 import { configureTestBed } from '~/testing/unit-test-helper';
-import { NotificationType } from '../enum/notification-type.enum';
-import { CdNotification, CdNotificationConfig } from '../models/cd-notification';
+import { NotificationType } from '@enum/notification-type.enum';
+import { CdNotification, CdNotificationConfig } from '@models/cd-notification';
 import { ApiInterceptorService } from './api-interceptor.service';
 import { NotificationService } from './notification.service';
 

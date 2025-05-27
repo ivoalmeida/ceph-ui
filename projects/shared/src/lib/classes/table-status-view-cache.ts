@@ -1,4 +1,4 @@
-import { ViewCacheStatus } from '../enum/view-cache-status.enum';
+import { ViewCacheStatus } from '@enum/view-cache-status.enum';
 import { TableStatus } from './table-status';
 
 export class TableStatusViewCache extends TableStatus {

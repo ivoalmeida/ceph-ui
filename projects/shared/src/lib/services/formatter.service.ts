@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AbstractControl, ValidationErrors } from '@angular/forms';
 import _ from 'lodash';
-import { isEmptyInputValue } from '../forms/cd-validators';
+import { isEmptyInputValue } from '@forms/cd-validators';
 
 @Injectable({
   providedIn: 'root'

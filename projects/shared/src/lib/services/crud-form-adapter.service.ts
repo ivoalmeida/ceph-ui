@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { FormlyJsonschema } from '@ngx-formly/core/json-schema';
-import { CrudTaskInfo, JsonFormUISchema } from '../forms/crud-form/crud-form.model';
-import { setupValidators } from '../forms/crud-form/helpers';
+import { CrudTaskInfo, JsonFormUISchema } from '@forms/crud-form/crud-form.model';
+import { setupValidators } from '@forms/crud-form/helpers';
 
 @Injectable({
   providedIn: 'root'

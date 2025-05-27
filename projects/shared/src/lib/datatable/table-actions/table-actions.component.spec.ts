@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { PipesModule } from '~/app/shared/pipes/pipes.module';
+import { PipesModule } from '@pipes/pipes.module';
 
-import { ComponentsModule } from '~/app/shared/components/components.module';
-import { CdTableAction } from '~/app/shared/models/cd-table-action';
-import { CdTableSelection } from '~/app/shared/models/cd-table-selection';
-import { Permission } from '~/app/shared/models/permissions';
+import { ComponentsModule } from '@components/components.module';
+import { CdTableAction } from '@models/cd-table-action';
+import { CdTableSelection } from '@models/cd-table-selection';
+import { Permission } from '@models/permissions';
 import { configureTestBed, PermissionHelper } from '~/testing/unit-test-helper';
 import { TableActionsComponent } from './table-actions.component';
 

@@ -1,4 +1,4 @@
-import { ViewCacheStatus } from '../enum/view-cache-status.enum';
+import { ViewCacheStatus } from '@enum/view-cache-status.enum';
 import { TableStatusViewCache } from './table-status-view-cache';
 
 describe('TableStatusViewCache', () => {

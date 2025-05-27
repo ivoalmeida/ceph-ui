@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { HealthLabel } from '~/app/shared/enum/health-label.enum';
+import { HealthLabel } from '@enum/health-label.enum';
 
 @Pipe({
   name: 'healthLabel'

@@ -4,14 +4,14 @@ import { NgForm, ReactiveFormsModule } from '@angular/forms';
 
 import { Observable, Subscriber, timer as observableTimer } from 'rxjs';
 
-import { DirectivesModule } from '~/app/shared/directives/directives.module';
+import { DirectivesModule } from '@directives/directives.module';
 import { configureTestBed, modalServiceShow } from '~/testing/unit-test-helper';
 import { AlertPanelComponent } from '../alert-panel/alert-panel.component';
 import { LoadingPanelComponent } from '../loading-panel/loading-panel.component';
 import { DeleteConfirmationModalComponent } from './delete-confirmation-modal.component';
 import { ModalService, PlaceholderService } from 'carbon-components-angular';
-import { ModalCdsService } from '../../services/modal-cds.service';
-import { DeletionImpact } from '../../enum/delete-confirmation-modal-impact.enum';
+import { ModalCdsService } from '@services/modal-cds.service';
+import { DeletionImpact } from '@enum/delete-confirmation-modal-impact.enum';
 
 @NgModule({})
 export class MockModule {}

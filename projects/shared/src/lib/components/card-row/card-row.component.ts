@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { Icons } from '~/app/shared/enum/icons.enum';
-import { HardwareNameMapping } from '~/app/shared/enum/hardware.enum';
+import { Icons } from '@enum/icons.enum';
+import { HardwareNameMapping } from '@enum/hardware.enum';
 
 @Component({
   selector: 'cd-card-row',

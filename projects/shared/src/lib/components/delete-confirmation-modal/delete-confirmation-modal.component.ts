@@ -2,11 +2,11 @@ import { Component, Inject, OnInit, Optional, TemplateRef, ViewChild } from '@an
 import { UntypedFormControl, AbstractControl, ValidationErrors, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 
-import { CdFormGroup } from '~/app/shared/forms/cd-form-group';
+import { CdFormGroup } from '@forms/cd-form-group';
 import { SubmitButtonComponent } from '../submit-button/submit-button.component';
 import { BaseModal } from 'carbon-components-angular';
-import { CdValidators } from '../../forms/cd-validators';
-import { DeletionImpact } from '../../enum/delete-confirmation-modal-impact.enum';
+import { CdValidators } from '@forms/cd-validators';
+import { DeletionImpact } from '@enum/delete-confirmation-modal-impact.enum';
 
 @Component({
   selector: 'cd-deletion-modal',

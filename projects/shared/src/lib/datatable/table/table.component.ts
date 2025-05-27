@@ -20,21 +20,21 @@ import { TableHeaderItem, TableItem, TableModel, TableRowSize } from 'carbon-com
 import _ from 'lodash';
 import { BehaviorSubject, Observable, of, Subject, Subscription } from 'rxjs';
 
-import { TableStatus } from '~/app/shared/classes/table-status';
-import { CellTemplate } from '~/app/shared/enum/cell-template.enum';
-import { Icons } from '~/app/shared/enum/icons.enum';
-import { CdTableColumn } from '~/app/shared/models/cd-table-column';
-import { CdTableColumnFilter } from '~/app/shared/models/cd-table-column-filter';
-import { CdTableColumnFiltersChange } from '~/app/shared/models/cd-table-column-filters-change';
-import { CdTableFetchDataContext } from '~/app/shared/models/cd-table-fetch-data-context';
-import { CdTableSelection } from '~/app/shared/models/cd-table-selection';
-import { CdUserConfig } from '~/app/shared/models/cd-user-config';
-import { TimerService } from '~/app/shared/services/timer.service';
+import { TableStatus } from '@classes/table-status';
+import { CellTemplate } from '@enum/cell-template.enum';
+import { Icons } from '@enum/icons.enum';
+import { CdTableColumn } from '@models/cd-table-column';
+import { CdTableColumnFilter } from '@models/cd-table-column-filter';
+import { CdTableColumnFiltersChange } from '@models/cd-table-column-filters-change';
+import { CdTableFetchDataContext } from '@models/cd-table-fetch-data-context';
+import { CdTableSelection } from '@models/cd-table-selection';
+import { CdUserConfig } from '@models/cd-user-config';
+import { TimerService } from '@services/timer.service';
 import { TableActionsComponent } from '../table-actions/table-actions.component';
-import { TableDetailDirective } from '../directives/table-detail.directive';
+import { TableDetailDirective } from '@directives/table-detail.directive';
 import { filter, map } from 'rxjs/operators';
-import { CdSortDirection } from '../../enum/cd-sort-direction';
-import { CdSortPropDir } from '../../models/cd-sort-prop-dir';
+import { CdSortDirection } from '@enum/cd-sort-direction';
+import { CdSortPropDir } from '@models/cd-sort-prop-dir';
 
 const TABLE_LIST_LIMIT = 10;
 type TPaginationInput = { page: number; size: number; filteredData: any[] };

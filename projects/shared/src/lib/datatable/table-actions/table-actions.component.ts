@@ -2,10 +2,10 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 
 import _ from 'lodash';
 
-import { Icons } from '~/app/shared/enum/icons.enum';
-import { CdTableAction } from '~/app/shared/models/cd-table-action';
-import { CdTableSelection } from '~/app/shared/models/cd-table-selection';
-import { Permission } from '~/app/shared/models/permissions';
+import { Icons } from '@enum/icons.enum';
+import { CdTableAction } from '@models/cd-table-action';
+import { CdTableSelection } from '@models/cd-table-selection';
+import { Permission } from '@models/permissions';
 
 @Component({
   selector: 'cd-table-actions',

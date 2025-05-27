@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { configureTestBed, PrometheusHelper } from '~/testing/unit-test-helper';
-import { PrometheusRule } from '../models/prometheus-alerts';
+import { PrometheusRule } from '@models/prometheus-alerts';
 import { SharedModule } from '../shared.module';
 import { PrometheusSilenceMatcherService } from './prometheus-silence-matcher.service';
 

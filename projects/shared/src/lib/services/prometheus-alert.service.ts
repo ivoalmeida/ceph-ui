@@ -2,12 +2,12 @@ import { Injectable } from '@angular/core';
 
 import _ from 'lodash';
 
-import { PrometheusService } from '../api/prometheus.service';
+import { PrometheusService } from '@api/prometheus.service';
 import {
   AlertmanagerAlert,
   PrometheusCustomAlert,
   PrometheusRule
-} from '../models/prometheus-alerts';
+} from '@models/prometheus-alerts';
 import { PrometheusAlertFormatter } from './prometheus-alert-formatter';
 
 @Injectable({

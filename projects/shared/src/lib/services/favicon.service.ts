@@ -3,8 +3,8 @@ import { Inject, Injectable, OnDestroy } from '@angular/core';
 
 import { Subscription } from 'rxjs';
 
-import { CssHelper } from '~/app/shared/classes/css-helper';
-import { HealthColor } from '~/app/shared/enum/health-color.enum';
+import { CssHelper } from '@classes/css-helper';
+import { HealthColor } from '@enum/health-color.enum';
 import { SummaryService } from './summary.service';
 
 @Injectable()

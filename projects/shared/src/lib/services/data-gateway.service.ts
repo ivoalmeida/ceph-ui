@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { JsonFormUISchema } from '../forms/crud-form/crud-form.model';
+import { JsonFormUISchema } from '@forms/crud-form/crud-form.model';
 import { CrudFormAdapterService } from './crud-form-adapter.service';
 
 @Injectable({

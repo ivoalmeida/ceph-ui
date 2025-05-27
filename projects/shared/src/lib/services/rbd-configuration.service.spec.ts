@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { configureTestBed } from '~/testing/unit-test-helper';
-import { RbdConfigurationType } from '../models/configuration';
+import { RbdConfigurationType } from '@models/configuration';
 import { RbdConfigurationService } from './rbd-configuration.service';
 
 describe('RbdConfigurationService', () => {

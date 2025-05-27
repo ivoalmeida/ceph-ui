@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { CdTableColumn } from '../../models/cd-table-column';
-import { CdFormGroup } from '../../forms/cd-form-group';
+import { CdTableColumn } from '@models/cd-table-column';
+import { CdFormGroup } from '@forms/cd-form-group';
 import _ from 'lodash';
 
 @Component({

@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import { DocService } from '~/app/shared/services/doc.service';
+import { DocService } from '@services/doc.service';
 
 @Component({
   selector: 'cd-doc',

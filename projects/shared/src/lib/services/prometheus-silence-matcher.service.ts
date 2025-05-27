@@ -5,8 +5,8 @@ import _ from 'lodash';
 import {
   AlertmanagerSilenceMatcher,
   AlertmanagerSilenceMatcherMatch
-} from '../models/alertmanager-silence';
-import { PrometheusRule } from '../models/prometheus-alerts';
+} from '@models/alertmanager-silence';
+import { PrometheusRule } from '@models/prometheus-alerts';
 
 @Injectable({
   providedIn: 'root'

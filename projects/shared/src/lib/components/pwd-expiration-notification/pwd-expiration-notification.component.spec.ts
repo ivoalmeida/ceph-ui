@@ -7,9 +7,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 import { of as observableOf } from 'rxjs';
 
-import { SettingsService } from '~/app/shared/api/settings.service';
-import { AlertPanelComponent } from '~/app/shared/components/alert-panel/alert-panel.component';
-import { AuthStorageService } from '~/app/shared/services/auth-storage.service';
+import { SettingsService } from '@api/settings.service';
+import { AlertPanelComponent } from '@components/alert-panel/alert-panel.component';
+import { AuthStorageService } from '@services/auth-storage.service';
 import { configureTestBed } from '~/testing/unit-test-helper';
 import { PwdExpirationNotificationComponent } from './pwd-expiration-notification.component';
 

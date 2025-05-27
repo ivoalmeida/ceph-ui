@@ -5,7 +5,7 @@ import { TableComponent } from '../table/table.component';
 import { TableKeyValueComponent } from '../table-key-value/table-key-value.component';
 import { TablePaginationComponent } from '../table-pagination/table-pagination.component';
 import { FormHelper, configureTestBed } from '~/testing/unit-test-helper';
-import { CdFormGroup } from '../../forms/cd-form-group';
+import { CdFormGroup } from '@forms/cd-form-group';
 import { FormControl } from '@angular/forms';
 
 describe('CheckedTableFormComponent', () => {

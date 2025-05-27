@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-import { CssHelper } from '../classes/css-helper';
-import { HealthColor } from '~/app/shared/enum/health-color.enum';
+import { CssHelper } from '@classes/css-helper';
+import { HealthColor } from '@enum/health-color.enum';
 
 @Pipe({
   name: 'healthColor'

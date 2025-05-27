@@ -4,10 +4,10 @@ import _ from 'lodash';
 import { IndividualConfig, ToastrService } from 'ngx-toastr';
 import { BehaviorSubject, Subject } from 'rxjs';
 
-import { NotificationType } from '../enum/notification-type.enum';
-import { CdNotification, CdNotificationConfig } from '../models/cd-notification';
-import { FinishedTask } from '../models/finished-task';
-import { CdDatePipe } from '../pipes/cd-date.pipe';
+import { NotificationType } from '@enum/notification-type.enum';
+import { CdNotification, CdNotificationConfig } from '@models/cd-notification';
+import { FinishedTask } from '@models/finished-task';
+import { CdDatePipe } from '@pipes/cd-date.pipe';
 import { TaskMessageService } from './task-message.service';
 
 @Injectable({

@@ -1,12 +1,12 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { Observable, Subscription } from 'rxjs';
-import { UpgradeService } from '../../api/upgrade.service';
-import { UpgradeInfoInterface, UpgradeStatusInterface } from '../../models/upgrade.interface';
-import { OrchestratorService } from '../../api/orchestrator.service';
-import { Icons } from '~/app/shared/enum/icons.enum';
-import { SummaryService } from '../../services/summary.service';
-import { ExecutingTask } from '../../models/executing-task';
+import { UpgradeService } from '@api/upgrade.service';
+import { UpgradeInfoInterface, UpgradeStatusInterface } from '@models/upgrade.interface';
+import { OrchestratorService } from '@api/orchestrator.service';
+import { Icons } from '@enum/icons.enum';
+import { SummaryService } from '@services/summary.service';
+import { ExecutingTask } from '@models/executing-task';
 
 @Component({
   selector: 'cd-upgradable',
