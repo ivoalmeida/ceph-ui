@@ -19,15 +19,15 @@ export class PasswordPolicyService {
         const settings = new CdPwdPolicySettings(resp);
         let helpText: string[] = [];
         if (settings.pwdPolicyEnabled) {
-          helpText.push($localize`Required rules for passwords:`);
+          helpText.push(`Required rules for passwords:`);
           const i18nHelp: { [key: string]: string } = {
-            pwdPolicyCheckLengthEnabled: $localize`Must contain at least ${settings.pwdPolicyMinLength} characters`,
-            pwdPolicyCheckOldpwdEnabled: $localize`Must not be the same as the previous one`,
-            pwdPolicyCheckUsernameEnabled: $localize`Cannot contain the username`,
-            pwdPolicyCheckExclusionListEnabled: $localize`Cannot contain any configured keyword`,
-            pwdPolicyCheckRepetitiveCharsEnabled: $localize`Cannot contain any repetitive characters e.g. "aaa"`,
-            pwdPolicyCheckSequentialCharsEnabled: $localize`Cannot contain any sequential characters e.g. "abc"`,
-            pwdPolicyCheckComplexityEnabled: $localize`Must consist of characters from the following groups:
+            pwdPolicyCheckLengthEnabled: `Must contain at least ${settings.pwdPolicyMinLength} characters`,
+            pwdPolicyCheckOldpwdEnabled: `Must not be the same as the previous one`,
+            pwdPolicyCheckUsernameEnabled: `Cannot contain the username`,
+            pwdPolicyCheckExclusionListEnabled: `Cannot contain any configured keyword`,
+            pwdPolicyCheckRepetitiveCharsEnabled: `Cannot contain any repetitive characters e.g. "aaa"`,
+            pwdPolicyCheckSequentialCharsEnabled: `Cannot contain any sequential characters e.g. "abc"`,
+            pwdPolicyCheckComplexityEnabled: `Must consist of characters from the following groups:
   * Alphabetic a-z, A-Z
   * Numbers 0-9
   * Special chars: !"#$%& '()*+,-./:;<=>?@[\\]^_\`{{|}}~

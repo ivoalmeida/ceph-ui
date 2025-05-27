@@ -31,7 +31,7 @@ export class OsdService {
     KNOWN_PRIORITIES: [
       {
         name: null,
-        text: $localize`-- Select the priority --`,
+        text: `-- Select the priority --`,
         values: {
           osd_max_backfills: null,
           osd_recovery_max_active: null,
@@ -41,7 +41,7 @@ export class OsdService {
       },
       {
         name: 'low',
-        text: $localize`Low`,
+        text: `Low`,
         values: {
           osd_max_backfills: 1,
           osd_recovery_max_active: 1,
@@ -51,7 +51,7 @@ export class OsdService {
       },
       {
         name: 'default',
-        text: $localize`Default`,
+        text: `Default`,
         values: {
           osd_max_backfills: 1,
           osd_recovery_max_active: 3,
@@ -61,7 +61,7 @@ export class OsdService {
       },
       {
         name: 'high',
-        text: $localize`High`,
+        text: `High`,
         values: {
           osd_max_backfills: 4,
           osd_recovery_max_active: 4,

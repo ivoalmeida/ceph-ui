@@ -6,9 +6,10 @@ import { LanguageService } from '@services/language.service';
 import { SupportedLanguages } from './supported-languages.enum';
 
 @Component({
-  selector: 'cd-language-selector',
-  templateUrl: './language-selector.component.html',
-  styleUrls: ['./language-selector.component.scss']
+    selector: 'cd-language-selector',
+    templateUrl: './language-selector.component.html',
+    styleUrls: ['./language-selector.component.scss'],
+    standalone: true
 })
 export class LanguageSelectorComponent implements OnInit {
   allLanguages = SupportedLanguages;

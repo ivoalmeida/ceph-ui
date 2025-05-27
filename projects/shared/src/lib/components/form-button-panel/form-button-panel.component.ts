@@ -9,9 +9,10 @@ import { ModalCdsService } from '@services/modal-cds.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'cd-form-button-panel',
-  templateUrl: './form-button-panel.component.html',
-  styleUrls: ['./form-button-panel.component.scss']
+    selector: 'cd-form-button-panel',
+    templateUrl: './form-button-panel.component.html',
+    styleUrls: ['./form-button-panel.component.scss'],
+    standalone: true
 })
 export class FormButtonPanelComponent implements OnInit {
   @ViewChild(SubmitButtonComponent)

@@ -9,9 +9,10 @@ import { CdFormGroup } from '@forms/cd-form-group';
 import { ConfigOptionTypes } from './config-option.types';
 
 @Component({
-  selector: 'cd-config-option',
-  templateUrl: './config-option.component.html',
-  styleUrls: ['./config-option.component.scss']
+    selector: 'cd-config-option',
+    templateUrl: './config-option.component.html',
+    styleUrls: ['./config-option.component.scss'],
+    standalone: true
 })
 export class ConfigOptionComponent implements OnInit {
   @Input()

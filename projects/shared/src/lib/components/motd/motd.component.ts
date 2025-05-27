@@ -6,9 +6,10 @@ import { Motd } from '@api/motd.service';
 import { MotdNotificationService } from '@services/motd-notification.service';
 
 @Component({
-  selector: 'cd-motd',
-  templateUrl: './motd.component.html',
-  styleUrls: ['./motd.component.scss']
+    selector: 'cd-motd',
+    templateUrl: './motd.component.html',
+    styleUrls: ['./motd.component.scss'],
+    standalone: true
 })
 export class MotdComponent implements OnInit, OnDestroy {
   motd: Motd | undefined = undefined;

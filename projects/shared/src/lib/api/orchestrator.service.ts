@@ -14,8 +14,8 @@ export class OrchestratorService {
   private url = 'ui-api/orchestrator';
 
   disableMessages = {
-    noOrchestrator: $localize`The feature is disabled because Orchestrator is not available.`,
-    missingFeature: $localize`The Orchestrator backend doesn't support this feature.`
+    noOrchestrator: `The feature is disabled because Orchestrator is not available.`,
+    missingFeature: `The Orchestrator backend doesn't support this feature.`
   };
 
   constructor(private http: HttpClient) {}

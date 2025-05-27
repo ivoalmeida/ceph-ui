@@ -7,11 +7,7 @@
     "declaration": true,
     "declarationMap": true,
     "inlineSources": true,
-    "types": [],
-    "baseUrl": "./",
-    "paths": {
-      "@components/*": ["src/lib/components/*"]
-    }
+    "types": []
   },
   "exclude": [
     "**/*.spec.ts"

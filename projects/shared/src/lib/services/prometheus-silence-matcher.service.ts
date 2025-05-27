@@ -59,17 +59,17 @@ export class PrometheusSilenceMatcherService {
 
   private getMatchText(rules: number, alerts: number): string {
     const msg = {
-      noRule: $localize`Your matcher seems to match no currently defined rule or active alert.`,
-      noAlerts: $localize`no active alerts`,
-      alert: $localize`1 active alert`,
-      alerts: $localize`${alerts} active alerts`,
-      rule: $localize`Matches 1 rule`,
-      rules: $localize`Matches ${rules} rules`
+      noRule: `Your matcher seems to match no currently defined rule or active alert.`,
+      noAlerts: `no active alerts`,
+      alert: `1 active alert`,
+      alerts: `${alerts} active alerts`,
+      rule: `Matches 1 rule`,
+      rules: `Matches ${rules} rules`
     };
 
     const rule = rules > 1 ? msg.rules : msg.rule;
     const alert = alerts ? (alerts > 1 ? msg.alerts : msg.alert) : msg.noAlerts;
 
-    return rules ? $localize`${rule} with ${alert}.` : msg.noRule;
+    return rules ? `${rule} with ${alert}.` : msg.noRule;
   }
 }

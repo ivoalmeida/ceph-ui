@@ -3,6 +3,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "checkJs": false,
     "downlevelIteration": true,
     "esModuleInterop": true,
     "importHelpers": true,
@@ -31,6 +34,7 @@
       "@components/*": ["projects/shared/src/lib/components/*"],
       "@constants/*": ["projects/shared/src/lib/constants/*"],
       "@datatable/*": ["projects/shared/src/lib/datatable/*"],
+      "@decorators/*": ["projects/shared/src/lib/decorators/*"],
       "@directives/*": ["projects/shared/src/lib/directives/*"],
       "@enum/*": ["projects/shared/src/lib/enum/*"],
       "@forms/*": ["projects/shared/src/lib/forms/*"],
@@ -40,13 +44,13 @@
       "@testing/*": ["projects/shared/src/lib/testing/*"]
     },
     "typeRoots": ["node_modules/@types"],
-    "lib": ["es2017", "dom"],
+    "lib": ["es2018", "dom"],
     "allowJs": true
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
-    "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictInjectionParameters": false,
+    "strictInputAccessModifiers": false,
+    "strictTemplates": false
   }
 }

@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'cd-label',
-  templateUrl: './cd-label.component.html',
-  styleUrls: ['./cd-label.component.scss']
+    selector: 'cd-label',
+    templateUrl: './cd-label.component.html',
+    styleUrls: ['./cd-label.component.scss'],
+    standalone: true
 })
 export class CdLabelComponent {
   @Input() key?: string;

@@ -47,7 +47,7 @@ export class SmbService {
     if (!(file.type === APPYAML || file.type === APPJSON)) {
       this.notificationService.show(
         NotificationType.error,
-        $localize`Invalid file type: only .json or .yaml accepted`
+        `Invalid file type: only .json or .yaml accepted`
       );
       return;
     }
@@ -63,7 +63,7 @@ export class SmbService {
           parsedContent = JSON.parse(fileContents);
         }
       } catch (error) {
-        this.notificationService.show(NotificationType.error, $localize`${error.message}`);
+        this.notificationService.show(NotificationType.error, `${error.message}`);
       }
       this.setDataUploaded(parsedContent);
     };

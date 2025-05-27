@@ -4,6 +4,8 @@ import { AbstractControl, UntypedFormGroup, FormGroupDirective, NgForm } from '@
 import _ from 'lodash';
 
 import { Icons } from '@enum/icons.enum';
+import { CommonModule } from '@angular/common';
+import { ButtonModule } from 'carbon-components-angular';
 
 /**
  * This component will render a submit button with the given label.
@@ -25,8 +27,10 @@ import { Icons } from '@enum/icons.enum';
  */
 @Component({
   selector: 'cd-submit-button',
+  imports: [CommonModule, ButtonModule],
   templateUrl: './submit-button.component.html',
-  styleUrls: ['./submit-button.component.scss']
+  styleUrls: ['./submit-button.component.scss'],
+  standalone: true
 })
 export class SubmitButtonComponent implements OnInit {
   @Input()

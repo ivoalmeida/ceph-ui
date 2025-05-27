@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { Icons } from '@enum/icons.enum';
 
 @Component({
-  selector: 'cd-card',
-  templateUrl: './card.component.html',
-  styleUrls: ['./card.component.scss']
+    selector: 'cd-card',
+    templateUrl: './card.component.html',
+    styleUrls: ['./card.component.scss'],
+    standalone: true
 })
 export class CardComponent {
   icons = Icons;

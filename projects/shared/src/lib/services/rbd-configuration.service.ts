@@ -20,79 +20,79 @@ export class RbdConfigurationService {
   constructor() {
     this.sections = [
       {
-        heading: $localize`Quality of Service`,
+        heading: `Quality of Service`,
         class: 'quality-of-service',
         options: [
           {
             name: 'rbd_qos_bps_limit',
-            displayName: $localize`BPS Limit`,
-            description: $localize`The desired limit of IO bytes per second.`,
+            displayName: `BPS Limit`,
+            description: `The desired limit of IO bytes per second.`,
             type: RbdConfigurationType.bps
           },
           {
             name: 'rbd_qos_iops_limit',
-            displayName: $localize`IOPS Limit`,
-            description: $localize`The desired limit of IO operations per second.`,
+            displayName: `IOPS Limit`,
+            description: `The desired limit of IO operations per second.`,
             type: RbdConfigurationType.iops
           },
           {
             name: 'rbd_qos_read_bps_limit',
-            displayName: $localize`Read BPS Limit`,
-            description: $localize`The desired limit of read bytes per second.`,
+            displayName: `Read BPS Limit`,
+            description: `The desired limit of read bytes per second.`,
             type: RbdConfigurationType.bps
           },
           {
             name: 'rbd_qos_read_iops_limit',
-            displayName: $localize`Read IOPS Limit`,
-            description: $localize`The desired limit of read operations per second.`,
+            displayName: `Read IOPS Limit`,
+            description: `The desired limit of read operations per second.`,
             type: RbdConfigurationType.iops
           },
           {
             name: 'rbd_qos_write_bps_limit',
-            displayName: $localize`Write BPS Limit`,
-            description: $localize`The desired limit of write bytes per second.`,
+            displayName: `Write BPS Limit`,
+            description: `The desired limit of write bytes per second.`,
             type: RbdConfigurationType.bps
           },
           {
             name: 'rbd_qos_write_iops_limit',
-            displayName: $localize`Write IOPS Limit`,
-            description: $localize`The desired limit of write operations per second.`,
+            displayName: `Write IOPS Limit`,
+            description: `The desired limit of write operations per second.`,
             type: RbdConfigurationType.iops
           },
           {
             name: 'rbd_qos_bps_burst',
-            displayName: $localize`BPS Burst`,
-            description: $localize`The desired burst limit of IO bytes.`,
+            displayName: `BPS Burst`,
+            description: `The desired burst limit of IO bytes.`,
             type: RbdConfigurationType.bps
           },
           {
             name: 'rbd_qos_iops_burst',
-            displayName: $localize`IOPS Burst`,
-            description: $localize`The desired burst limit of IO operations.`,
+            displayName: `IOPS Burst`,
+            description: `The desired burst limit of IO operations.`,
             type: RbdConfigurationType.iops
           },
           {
             name: 'rbd_qos_read_bps_burst',
-            displayName: $localize`Read BPS Burst`,
-            description: $localize`The desired burst limit of read bytes.`,
+            displayName: `Read BPS Burst`,
+            description: `The desired burst limit of read bytes.`,
             type: RbdConfigurationType.bps
           },
           {
             name: 'rbd_qos_read_iops_burst',
-            displayName: $localize`Read IOPS Burst`,
-            description: $localize`The desired burst limit of read operations.`,
+            displayName: `Read IOPS Burst`,
+            description: `The desired burst limit of read operations.`,
             type: RbdConfigurationType.iops
           },
           {
             name: 'rbd_qos_write_bps_burst',
-            displayName: $localize`Write BPS Burst`,
-            description: $localize`The desired burst limit of write bytes.`,
+            displayName: `Write BPS Burst`,
+            description: `The desired burst limit of write bytes.`,
             type: RbdConfigurationType.bps
           },
           {
             name: 'rbd_qos_write_iops_burst',
-            displayName: $localize`Write IOPS Burst`,
-            description: $localize`The desired burst limit of write operations.`,
+            displayName: `Write IOPS Burst`,
+            description: `The desired burst limit of write operations.`,
             type: RbdConfigurationType.iops
           }
         ] as RbdConfigurationExtraField[]

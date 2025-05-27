@@ -9,9 +9,9 @@ describe('FormAdvancedFieldsetComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [FormAdvancedFieldsetComponent],
-      schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA]
-    }).compileComponents();
+    imports: [FormAdvancedFieldsetComponent],
+    schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA]
+}).compileComponents();
 
     fixture = TestBed.createComponent(FormAdvancedFieldsetComponent);
     component = fixture.componentInstance;

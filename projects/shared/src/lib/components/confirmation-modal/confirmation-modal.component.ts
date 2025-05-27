@@ -1,17 +1,21 @@
 import { Component, Inject, OnDestroy, OnInit, Optional, TemplateRef } from '@angular/core';
-import { UntypedFormGroup } from '@angular/forms';
+import { ReactiveFormsModule, UntypedFormGroup } from '@angular/forms';
 
-import { BaseModal } from 'carbon-components-angular';
+import { BaseModal, ModalModule } from 'carbon-components-angular';
+import { FormButtonPanelComponent } from '../form-button-panel/form-button-panel.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'cd-confirmation-modal',
+  imports: [ModalModule, CommonModule, ReactiveFormsModule, FormButtonPanelComponent],
   templateUrl: './confirmation-modal.component.html',
   styleUrls: ['./confirmation-modal.component.scss'],
   providers: [
     { provide: 'warning', useValue: false },
     { provide: 'showSubmit', useValue: true },
     { provide: 'showCancel', useValue: true }
-  ]
+  ],
+  standalone: true
 })
 export class ConfirmationModalComponent extends BaseModal implements OnInit, OnDestroy {
   // Component only

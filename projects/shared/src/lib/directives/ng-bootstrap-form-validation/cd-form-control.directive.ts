@@ -34,8 +34,9 @@ export function controlPath(name: string, parent: ControlContainer): string[] {
 }
 
 @Directive({
-  // eslint-disable-next-line
-  selector: '.form-control,.form-check-input,.custom-control-input'
+    // eslint-disable-next-line
+    selector: '.form-control,.form-check-input,.custom-control-input',
+    standalone: true
 })
 export class CdFormControlDirective {
   @Input()

@@ -34,8 +34,9 @@ import {
 } from '@angular/forms';
 
 @Directive({
-  // eslint-disable-next-line
-  selector: '[formGroup]'
+    // eslint-disable-next-line
+    selector: '[formGroup]',
+    standalone: true
 })
 export class CdFormValidationDirective {
   @Input()

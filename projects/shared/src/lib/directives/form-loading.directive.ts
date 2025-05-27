@@ -5,7 +5,8 @@ import { LoadingPanelComponent } from '@components/loading-panel/loading-panel.c
 import { LoadingStatus } from '@forms/cd-form';
 
 @Directive({
-  selector: '[cdFormLoading]'
+    selector: '[cdFormLoading]',
+    standalone: true
 })
 export class FormLoadingDirective {
   constructor(private templateRef: TemplateRef<any>, private viewContainer: ViewContainerRef) {}
@@ -17,14 +18,14 @@ export class FormLoadingDirective {
 
     switch (condition) {
       case LoadingStatus.Loading:
-        content = this.resolveNgContent($localize`Loading form data...`);
+        content = this.resolveNgContent(`Loading form data...`);
         this.viewContainer.createComponent(LoadingPanelComponent, { projectableNodes: content });
         break;
       case LoadingStatus.Ready:
         this.viewContainer.createEmbeddedView(this.templateRef);
         break;
       case LoadingStatus.Error:
-        content = this.resolveNgContent($localize`Form data could not be loaded.`);
+        content = this.resolveNgContent(`Form data could not be loaded.`);
         const componentRef = this.viewContainer.createComponent(AlertPanelComponent, {
           projectableNodes: content
         });

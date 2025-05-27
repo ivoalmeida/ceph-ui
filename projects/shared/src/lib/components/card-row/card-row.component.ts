@@ -3,9 +3,10 @@ import { Icons } from '@enum/icons.enum';
 import { HardwareNameMapping } from '@enum/hardware.enum';
 
 @Component({
-  selector: 'cd-card-row',
-  templateUrl: './card-row.component.html',
-  styleUrls: ['./card-row.component.scss']
+    selector: 'cd-card-row',
+    templateUrl: './card-row.component.html',
+    styleUrls: ['./card-row.component.scss'],
+    standalone: true
 })
 export class CardRowComponent implements OnChanges {
   @Input()

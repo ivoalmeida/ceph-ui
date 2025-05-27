@@ -9,9 +9,8 @@ describe('UpgradableComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [UpgradableComponent],
-      imports: [HttpClientTestingModule]
-    }).compileComponents();
+    imports: [HttpClientTestingModule, UpgradableComponent]
+}).compileComponents();
 
     fixture = TestBed.createComponent(UpgradableComponent);
     component = fixture.componentInstance;

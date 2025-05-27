@@ -6,9 +6,10 @@ import { ToastrService } from 'ngx-toastr';
 import { Icons } from '@enum/icons.enum';
 
 @Component({
-  selector: 'cd-copy-2-clipboard-button',
-  templateUrl: './copy2clipboard-button.component.html',
-  styleUrls: ['./copy2clipboard-button.component.scss']
+    selector: 'cd-copy-2-clipboard-button',
+    templateUrl: './copy2clipboard-button.component.html',
+    styleUrls: ['./copy2clipboard-button.component.scss'],
+    standalone: true
 })
 export class Copy2ClipboardButtonComponent {
   @Input()

@@ -3,13 +3,14 @@ import { Component, Input, OnInit } from '@angular/core';
 import { DocService } from '@services/doc.service';
 
 @Component({
-  selector: 'cd-doc',
-  templateUrl: './doc.component.html',
-  styleUrls: ['./doc.component.scss']
+    selector: 'cd-doc',
+    templateUrl: './doc.component.html',
+    styleUrls: ['./doc.component.scss'],
+    standalone: true
 })
 export class DocComponent implements OnInit {
   @Input() section: string;
-  @Input() docText = $localize`documentation`;
+  @Input() docText = `documentation`;
   @Input() noSubscribe: boolean;
 
   docUrl: string;

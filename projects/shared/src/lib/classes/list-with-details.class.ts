@@ -20,7 +20,7 @@ export class ListWithDetails {
         this.ngZone.run(() => {
           this.tableStatus = new TableStatus(
             'secondary',
-            $localize`The user list data might be stale. If needed, you can manually reload it.`
+            `The user list data might be stale. If needed, you can manually reload it.`
           );
         });
       }, 10000);

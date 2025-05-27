@@ -8,9 +8,10 @@ import { CdTableSelection } from '@models/cd-table-selection';
 import { Permission } from '@models/permissions';
 
 @Component({
-  selector: 'cd-table-actions',
-  templateUrl: './table-actions.component.html',
-  styleUrls: ['./table-actions.component.scss']
+    selector: 'cd-table-actions',
+    templateUrl: './table-actions.component.html',
+    styleUrls: ['./table-actions.component.scss'],
+    standalone: true
 })
 export class TableActionsComponent implements OnChanges, OnInit {
   @Input()

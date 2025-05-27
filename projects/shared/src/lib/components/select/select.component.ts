@@ -9,9 +9,10 @@ import { SelectMessages } from './select-messages.model';
 import { SelectOption } from './select-option.model';
 
 @Component({
-  selector: 'cd-select',
-  templateUrl: './select.component.html',
-  styleUrls: ['./select.component.scss']
+    selector: 'cd-select',
+    templateUrl: './select.component.html',
+    styleUrls: ['./select.component.scss'],
+    standalone: true
 })
 export class SelectComponent implements OnInit, OnChanges {
   @Input()

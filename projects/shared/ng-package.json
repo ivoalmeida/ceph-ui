@@ -6,5 +6,15 @@
     "styleIncludePaths": ["./styles"]
   },
   "assets": ["./styles"],
-  "allowedNonPeerDependencies": ["@angular/*", "@carbon/*", "@ng-bootstrap/ng-bootstrap"]
+  "allowedNonPeerDependencies": [
+    "@angular/*",
+    "@carbon/*",
+    "@ng-bootstrap/ng-bootstrap",
+    "@ngx-formly/bootstrap",
+    "@ngx-formly/core",
+    "carbon-components-angular",
+    "lodash",
+    "ng-click-outside",
+    "simplebar-angular"
+  ]
 }

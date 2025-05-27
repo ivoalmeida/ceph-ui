@@ -3,9 +3,10 @@ import { FieldType, FieldTypeConfig } from '@ngx-formly/core';
 import { TextAreaJsonFormatterService } from '@services/text-area-json-formatter.service';
 
 @Component({
-  selector: 'cd-formly-textarea-type',
-  templateUrl: './formly-textarea-type.component.html',
-  styleUrls: ['./formly-textarea-type.component.scss']
+    selector: 'cd-formly-textarea-type',
+    templateUrl: './formly-textarea-type.component.html',
+    styleUrls: ['./formly-textarea-type.component.scss'],
+    standalone: true
 })
 export class FormlyTextareaTypeComponent extends FieldType<FieldTypeConfig> {
   @ViewChild('textArea')

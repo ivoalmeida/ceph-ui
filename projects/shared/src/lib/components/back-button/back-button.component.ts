@@ -4,9 +4,10 @@ import { ActivatedRoute } from '@angular/router';
 import { ActionLabelsI18n } from '@constants/app.constants';
 
 @Component({
-  selector: 'cd-back-button',
-  templateUrl: './back-button.component.html',
-  styleUrls: ['./back-button.component.scss']
+    selector: 'cd-back-button',
+    templateUrl: './back-button.component.html',
+    styleUrls: ['./back-button.component.scss'],
+    standalone: true
 })
 export class BackButtonComponent implements OnInit {
   @Output() backAction = new EventEmitter();

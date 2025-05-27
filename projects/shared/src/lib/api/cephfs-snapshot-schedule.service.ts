@@ -166,13 +166,13 @@ export class CephfsSnapshotScheduleService {
     const frequencyUnit = scheduleArr[scheduleArr.length - 1];
     const frequency =
       interval > 1 ? RepeaFrequencyPlural[frequencyUnit] : RepeaFrequencySingular[frequencyUnit];
-    return $localize`Every ${interval > 1 ? interval + ' ' : ''}${frequency}`;
+    return `Every ${interval > 1 ? interval + ' ' : ''}${frequency}`;
   }
 
   parseRetentionCopy(retention: string | Record<string, number>): string[] {
     if (!retention) return ['-'];
     return Object.entries(retention).map(([frequency, interval]) =>
-      $localize`${interval} ${RetentionFrequencyCopy[frequency]}`.toLocaleLowerCase()
+      `${interval} ${RetentionFrequencyCopy[frequency]}`.toLocaleLowerCase()
     );
   }
 }

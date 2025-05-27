@@ -6,9 +6,10 @@ import moment from 'moment';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'cd-date-time-picker',
-  templateUrl: './date-time-picker.component.html',
-  styleUrls: ['./date-time-picker.component.scss']
+    selector: 'cd-date-time-picker',
+    templateUrl: './date-time-picker.component.html',
+    styleUrls: ['./date-time-picker.component.scss'],
+    standalone: true
 })
 export class DateTimePickerComponent implements OnInit {
   @Input()

@@ -13,24 +13,24 @@ export class TableStatusViewCache extends TableStatus {
       case ViewCacheStatus.ValueNone:
         this.type = 'primary';
         this.msg =
-          (statusFor ? $localize`Retrieving data for ${statusFor}.` : $localize`Retrieving data.`) +
+          (statusFor ? `Retrieving data for ${statusFor}.` : `Retrieving data.`) +
           ' ' +
-          $localize`Please wait...`;
+          `Please wait...`;
         break;
       case ViewCacheStatus.ValueStale:
         this.type = 'secondary';
         this.msg = statusFor
-          ? $localize`Displaying previously cached data for ${statusFor}.`
-          : $localize`Displaying previously cached data.`;
+          ? `Displaying previously cached data for ${statusFor}.`
+          : `Displaying previously cached data.`;
         break;
       case ViewCacheStatus.ValueException:
         this.type = 'danger';
         this.msg =
           (statusFor
-            ? $localize`Could not load data for ${statusFor}.`
-            : $localize`Could not load data.`) +
+            ? `Could not load data for ${statusFor}.`
+            : `Could not load data.`) +
           ' ' +
-          $localize`Please check the cluster health.`;
+          `Please check the cluster health.`;
         break;
     }
   }

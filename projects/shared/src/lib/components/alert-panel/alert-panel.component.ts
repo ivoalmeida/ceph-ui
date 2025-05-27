@@ -12,9 +12,10 @@ import { NotificationContent, NotificationType } from 'carbon-components-angular
 import { Icons } from '@enum/icons.enum';
 
 @Component({
-  selector: 'cd-alert-panel',
-  templateUrl: './alert-panel.component.html',
-  styleUrls: ['./alert-panel.component.scss']
+    selector: 'cd-alert-panel',
+    templateUrl: './alert-panel.component.html',
+    styleUrls: ['./alert-panel.component.scss'],
+    standalone: true
 })
 export class AlertPanelComponent implements OnInit {
   @ViewChild('content', { static: true })
@@ -61,19 +62,19 @@ export class AlertPanelComponent implements OnInit {
     const type: NotificationType = this.type === 'danger' ? 'error' : this.type;
     switch (this.type) {
       case 'warning':
-        this.title = this.title || $localize`Warning`;
+        this.title = this.title || `Warning`;
         break;
       case 'error':
-        this.title = this.title || $localize`Error`;
+        this.title = this.title || `Error`;
         break;
       case 'info':
-        this.title = this.title || $localize`Information`;
+        this.title = this.title || `Information`;
         break;
       case 'success':
-        this.title = this.title || $localize`Success`;
+        this.title = this.title || `Success`;
         break;
       case 'danger':
-        this.title = this.title || $localize`Danger`;
+        this.title = this.title || `Danger`;
         break;
     }
 

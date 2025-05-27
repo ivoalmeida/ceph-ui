@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { FieldType } from '@ngx-formly/core';
 
 @Component({
-  selector: 'cd-formly-file-type',
-  templateUrl: './formly-file-type.component.html',
-  styleUrls: ['./formly-file-type.component.scss']
+    selector: 'cd-formly-file-type',
+    templateUrl: './formly-file-type.component.html',
+    styleUrls: ['./formly-file-type.component.scss'],
+    standalone: true
 })
 export class FormlyFileTypeComponent extends FieldType {}

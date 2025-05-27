@@ -11,10 +11,10 @@ class NgbNavMock {
 describe('StatefulTabDirective', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [StatefulTabDirective],
-      providers: [{ provide: NgbNav, useClass: NgbNavMock }],
-      schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA]
-    }).compileComponents();
+    imports: [StatefulTabDirective],
+    providers: [{ provide: NgbNav, useClass: NgbNavMock }],
+    schemas: [NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA]
+}).compileComponents();
   });
 
   it('should create an instance', () => {

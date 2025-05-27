@@ -7,9 +7,10 @@ import { SelectOption } from '../select/select-option.model';
 import { SelectComponent } from '../select/select.component';
 
 @Component({
-  selector: 'cd-select-badges',
-  templateUrl: './select-badges.component.html',
-  styleUrls: ['./select-badges.component.scss']
+    selector: 'cd-select-badges',
+    templateUrl: './select-badges.component.html',
+    styleUrls: ['./select-badges.component.scss'],
+    standalone: true
 })
 export class SelectBadgesComponent {
   @Input()

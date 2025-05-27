@@ -8,8 +8,8 @@ describe('HelpTextComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HelpTextComponent]
-    }).compileComponents();
+    imports: [HelpTextComponent]
+}).compileComponents();
 
     fixture = TestBed.createComponent(HelpTextComponent);
     component = fixture.componentInstance;

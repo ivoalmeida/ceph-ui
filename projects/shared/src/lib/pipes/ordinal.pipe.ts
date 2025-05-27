@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'ordinal'
+    name: 'ordinal',
+    standalone: true
 })
 export class OrdinalPipe implements PipeTransform {
   transform(value: any): any {

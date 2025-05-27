@@ -5,28 +5,29 @@ import moment from 'moment';
 
 moment.updateLocale('en', {
   relativeTime: {
-    future: $localize`in %s`,
-    past: $localize`%s ago`,
-    s: $localize`a few seconds`,
-    ss: $localize`%d seconds`,
-    m: $localize`a minute`,
-    mm: $localize`%d minutes`,
-    h: $localize`an hour`,
-    hh: $localize`%d hours`,
-    d: $localize`a day`,
-    dd: $localize`%d days`,
-    w: $localize`a week`,
-    ww: $localize`%d weeks`,
-    M: $localize`a month`,
-    MM: $localize`%d months`,
-    y: $localize`a year`,
-    yy: $localize`%d years`
+    future: `in %s`,
+    past: `%s ago`,
+    s: `a few seconds`,
+    ss: `%d seconds`,
+    m: `a minute`,
+    mm: `%d minutes`,
+    h: `an hour`,
+    hh: `%d hours`,
+    d: `a day`,
+    dd: `%d days`,
+    w: `a week`,
+    ww: `%d weeks`,
+    M: `a month`,
+    MM: `%d months`,
+    y: `a year`,
+    yy: `%d years`
   }
 });
 
 @Pipe({
-  name: 'relativeDate',
-  pure: false
+    name: 'relativeDate',
+    pure: false,
+    standalone: true
 })
 export class RelativeDatePipe implements PipeTransform {
   /**

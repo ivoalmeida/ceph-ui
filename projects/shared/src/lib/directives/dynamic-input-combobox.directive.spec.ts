@@ -5,7 +5,8 @@ import { Component, EventEmitter } from '@angular/core';
 import { ComboBoxItem } from '@models/combo-box.model';
 
 @Component({
-  template: `<div cdDynamicInputCombobox [items]="[]"></div>`
+    template: `<div cdDynamicInputCombobox [items]="[]"></div>`,
+    standalone: true
 })
 class MockComponent {
   items: ComboBoxItem[] = [{ content: 'Item1', name: 'Item1' }];
@@ -20,8 +21,9 @@ describe('DynamicInputComboboxDirective', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DynamicInputComboboxDirective, MockComponent]
-    }).compileComponents();
+    imports: [MockComponent],
+    declarations: [DynamicInputComboboxDirective]
+}).compileComponents();
 
     fixture = TestBed.createComponent(MockComponent);
 

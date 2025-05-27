@@ -1,17 +1,27 @@
 import { Component, Inject, OnInit, Optional, TemplateRef, ViewChild } from '@angular/core';
-import { UntypedFormControl, AbstractControl, ValidationErrors, Validators } from '@angular/forms';
+import {
+  UntypedFormControl,
+  AbstractControl,
+  ValidationErrors,
+  Validators,
+  ReactiveFormsModule
+} from '@angular/forms';
 import { Observable } from 'rxjs';
 
 import { CdFormGroup } from '@forms/cd-form-group';
 import { SubmitButtonComponent } from '../submit-button/submit-button.component';
-import { BaseModal } from 'carbon-components-angular';
+import { BaseModal, ModalModule } from 'carbon-components-angular';
 import { CdValidators } from '@forms/cd-validators';
 import { DeletionImpact } from '@enum/delete-confirmation-modal-impact.enum';
+import { CommonModule } from '@angular/common';
+import { FormButtonPanelComponent } from '../form-button-panel/form-button-panel.component';
 
 @Component({
   selector: 'cd-deletion-modal',
+  imports: [ModalModule, CommonModule, ReactiveFormsModule, FormButtonPanelComponent],
   templateUrl: './delete-confirmation-modal.component.html',
-  styleUrls: ['./delete-confirmation-modal.component.scss']
+  styleUrls: ['./delete-confirmation-modal.component.scss'],
+  standalone: true
 })
 export class DeleteConfirmationModalComponent extends BaseModal implements OnInit {
   @ViewChild(SubmitButtonComponent, { static: true })

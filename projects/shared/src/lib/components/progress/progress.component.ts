@@ -2,9 +2,10 @@ import { Component, Input } from '@angular/core';
 import { Icons } from '@enum/icons.enum';
 
 @Component({
-  selector: 'cd-progress',
-  templateUrl: './progress.component.html',
-  styleUrls: ['./progress.component.scss']
+    selector: 'cd-progress',
+    templateUrl: './progress.component.html',
+    styleUrls: ['./progress.component.scss'],
+    standalone: true
 })
 export class ProgressComponent {
   icons = Icons;

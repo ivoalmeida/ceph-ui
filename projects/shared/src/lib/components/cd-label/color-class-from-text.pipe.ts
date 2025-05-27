@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'colorClassFromText'
+    name: 'colorClassFromText',
+    standalone: true
 })
 export class ColorClassFromTextPipe implements PipeTransform {
   readonly cssClasses: string[] = [

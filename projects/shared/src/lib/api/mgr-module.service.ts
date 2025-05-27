@@ -106,7 +106,7 @@ export class MgrModuleService {
             if (notificationText) {
               this.notificationService.show(
                 NotificationType.success,
-                $localize`${notificationText}`
+                `${notificationText}`
               );
             }
 
@@ -141,7 +141,7 @@ export class MgrModuleService {
         this.notificationService.suspendToasties(true);
         // Block the whole UI to prevent user interactions until
         // the connection to the backend is reestablished
-        this.blockUI.start('global', $localize`Reconnecting, please wait ...`);
+        this.blockUI.start('global', `Reconnecting, please wait ...`);
         fnWaitUntilReconnected();
       }
     );

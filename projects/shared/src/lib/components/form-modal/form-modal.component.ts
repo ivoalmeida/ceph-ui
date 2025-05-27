@@ -11,9 +11,10 @@ import { DimlessBinaryPipe } from '@pipes/dimless-binary.pipe';
 import { FormatterService } from '@services/formatter.service';
 
 @Component({
-  selector: 'cd-form-modal',
-  templateUrl: './form-modal.component.html',
-  styleUrls: ['./form-modal.component.scss']
+    selector: 'cd-form-modal',
+    templateUrl: './form-modal.component.html',
+    styleUrls: ['./form-modal.component.scss'],
+    standalone: true
 })
 export class FormModalComponent extends BaseModal implements OnInit {
   // Internal
@@ -107,12 +108,12 @@ export class FormModalComponent extends BaseModal implements OnInit {
       return errorContext();
     }
     if (error === 'required') {
-      return $localize`This field is required.`;
+      return `This field is required.`;
     }
     if (error === 'pattern') {
-      return $localize`Size must be a number or in a valid format. eg: 5 GiB`;
+      return `Size must be a number or in a valid format. eg: 5 GiB`;
     }
-    return $localize`An error occurred.`;
+    return `An error occurred.`;
   }
 
   onSubmitForm(values: any) {

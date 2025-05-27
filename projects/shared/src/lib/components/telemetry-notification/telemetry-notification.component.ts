@@ -9,9 +9,10 @@ import { NotificationService } from '@services/notification.service';
 import { TelemetryNotificationService } from '@services/telemetry-notification.service';
 
 @Component({
-  selector: 'cd-telemetry-notification',
-  templateUrl: './telemetry-notification.component.html',
-  styleUrls: ['./telemetry-notification.component.scss']
+    selector: 'cd-telemetry-notification',
+    templateUrl: './telemetry-notification.component.html',
+    styleUrls: ['./telemetry-notification.component.scss'],
+    standalone: true
 })
 export class TelemetryNotificationComponent implements OnInit, OnDestroy {
   displayNotification = false;
@@ -54,8 +55,8 @@ export class TelemetryNotificationComponent implements OnInit, OnDestroy {
     localStorage.setItem('telemetry_notification_hidden', 'true');
     this.notificationService.show(
       NotificationType.success,
-      $localize`Telemetry activation reminder muted`,
-      $localize`You can activate the module on the Telemetry configuration \
+      `Telemetry activation reminder muted`,
+      `You can activate the module on the Telemetry configuration \
 page (<b>Dashboard Settings</b> -> <b>Telemetry configuration</b>) at any time.`
     );
   }

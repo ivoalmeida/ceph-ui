@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'iscsiBackstore'
+    name: 'iscsiBackstore',
+    standalone: true
 })
 export class IscsiBackstorePipe implements PipeTransform {
   transform(value: any): any {

@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'logPriority'
+    name: 'logPriority',
+    standalone: true
 })
 export class LogPriorityPipe implements PipeTransform {
   transform(value: any): any {

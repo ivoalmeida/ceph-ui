@@ -13,9 +13,10 @@ import { ChartTooltip } from '@models/chart-tooltip';
 import { DimlessBinaryPipe } from '@pipes/dimless-binary.pipe';
 
 @Component({
-  selector: 'cd-sparkline',
-  templateUrl: './sparkline.component.html',
-  styleUrls: ['./sparkline.component.scss']
+    selector: 'cd-sparkline',
+    templateUrl: './sparkline.component.html',
+    styleUrls: ['./sparkline.component.scss'],
+    standalone: true
 })
 export class SparklineComponent implements OnInit, OnChanges {
   @ViewChild('sparkCanvas', { static: true })

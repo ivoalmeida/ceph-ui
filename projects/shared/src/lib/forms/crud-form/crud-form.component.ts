@@ -12,9 +12,10 @@ import _ from 'lodash';
 import { CdTableSelection } from '@models/cd-table-selection';
 
 @Component({
-  selector: 'cd-crud-form',
-  templateUrl: './crud-form.component.html',
-  styleUrls: ['./crud-form.component.scss']
+    selector: 'cd-crud-form',
+    templateUrl: './crud-form.component.html',
+    styleUrls: ['./crud-form.component.scss'],
+    standalone: true
 })
 export class CrudFormComponent implements OnInit {
   model: any = {};

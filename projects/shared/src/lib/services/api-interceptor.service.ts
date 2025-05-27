@@ -111,8 +111,8 @@ export class ApiInterceptorService implements HttpInterceptor {
             case 403:
               this.router.navigate(['error'], {
                 state: {
-                  message: $localize`Sorry, you don’t have permission to view this page or resource.`,
-                  header: $localize`Access Denied`,
+                  message: `Sorry, you don’t have permission to view this page or resource.`,
+                  header: `Access Denied`,
                   icon: 'fa fa-lock',
                   source: 'forbidden'
                 }

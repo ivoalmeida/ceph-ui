@@ -6,9 +6,10 @@ import { Observable } from 'rxjs';
 import { CustomLoginBannerService } from '@api/custom-login-banner.service';
 
 @Component({
-  selector: 'cd-custom-login-banner',
-  templateUrl: './custom-login-banner.component.html',
-  styleUrls: ['./custom-login-banner.component.scss']
+    selector: 'cd-custom-login-banner',
+    templateUrl: './custom-login-banner.component.html',
+    styleUrls: ['./custom-login-banner.component.scss'],
+    standalone: true
 })
 export class CustomLoginBannerComponent implements OnInit {
   bannerText$: Observable<string>;

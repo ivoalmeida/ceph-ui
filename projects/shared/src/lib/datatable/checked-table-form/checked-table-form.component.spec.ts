@@ -17,22 +17,22 @@ describe('CheckedTableFormComponent', () => {
   let fakeColumns = [
     {
       prop: 'scope',
-      name: $localize`All`,
+      name: `All`,
       flexGrow: 1
     },
     {
       prop: 'read',
-      name: $localize`Read`,
+      name: `Read`,
       flexGrow: 1
     },
     {
       prop: 'write',
-      name: $localize`Write`,
+      name: `Write`,
       flexGrow: 1
     },
     {
       prop: 'execute',
-      name: $localize`Execute`,
+      name: `Execute`,
       flexGrow: 1
     }
   ];

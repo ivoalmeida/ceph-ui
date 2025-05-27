@@ -5,9 +5,10 @@ import { CdPwdExpirationSettings } from '@models/cd-pwd-expiration-settings';
 import { AuthStorageService } from '@services/auth-storage.service';
 
 @Component({
-  selector: 'cd-pwd-expiration-notification',
-  templateUrl: './pwd-expiration-notification.component.html',
-  styleUrls: ['./pwd-expiration-notification.component.scss']
+    selector: 'cd-pwd-expiration-notification',
+    templateUrl: './pwd-expiration-notification.component.html',
+    styleUrls: ['./pwd-expiration-notification.component.scss'],
+    standalone: true
 })
 export class PwdExpirationNotificationComponent implements OnInit, OnDestroy {
   alertType: string;

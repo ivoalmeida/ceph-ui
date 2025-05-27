@@ -19,27 +19,26 @@ import { FormlyTextareaTypeComponent } from '@forms/crud-form/formly-textarea-ty
 import { BlockUIModule, BlockUIService } from 'ng-block-ui';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    PipesModule,
-    ComponentsModule,
-    DataTableModule,
-    DirectivesModule,
-
-    ReactiveFormsModule,
-    FormlyModule.forRoot({
-      types: [
-        { name: 'array', component: FormlyArrayTypeComponent },
-        { name: 'object', component: FormlyObjectTypeComponent },
-        { name: 'input', component: FormlyInputTypeComponent }
-      ],
-      validationMessages: [{ name: 'required', message: 'This field is required' }]
-    }),
-    FormlyBootstrapModule,
-    BlockUIModule.forRoot()
-  ],
-  declarations: [FormlyTextareaTypeComponent],
-  exports: [ComponentsModule, PipesModule, DataTableModule, DirectivesModule],
-  providers: [AuthStorageService, AuthGuardService, FormatterService, CssHelper, BlockUIService]
+    imports: [
+        CommonModule,
+        PipesModule,
+        ComponentsModule,
+        DataTableModule,
+        DirectivesModule,
+        ReactiveFormsModule,
+        FormlyModule.forRoot({
+            types: [
+                { name: 'array', component: FormlyArrayTypeComponent },
+                { name: 'object', component: FormlyObjectTypeComponent },
+                { name: 'input', component: FormlyInputTypeComponent }
+            ],
+            validationMessages: [{ name: 'required', message: 'This field is required' }]
+        }),
+        FormlyBootstrapModule,
+        BlockUIModule.forRoot(),
+        FormlyTextareaTypeComponent
+    ],
+    exports: [ComponentsModule, PipesModule, DataTableModule, DirectivesModule],
+    providers: [AuthStorageService, AuthGuardService, FormatterService, CssHelper, BlockUIService]
 })
 export class SharedModule {}

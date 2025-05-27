@@ -3,7 +3,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import _ from 'lodash';
 
 @Pipe({
-  name: 'mgrSummary'
+    name: 'mgrSummary',
+    standalone: true
 })
 export class MgrSummaryPipe implements PipeTransform {
   transform(value: any): any {
@@ -18,7 +19,7 @@ export class MgrSummaryPipe implements PipeTransform {
     let activeCount: number;
     const activeTitleText = _.isUndefined(value.active_name)
       ? ''
-      : `${$localize`active daemon`}: ${value.active_name}`;
+      : `${`active daemon`}: ${value.active_name}`;
     // There is always one standbyreplay to replace active daemon, if active one is down
     if (activeTitleText.length > 0) {
       activeCount = 1;

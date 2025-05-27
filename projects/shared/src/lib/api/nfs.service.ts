@@ -21,27 +21,27 @@ export class NfsService extends ApiClient {
   nfsAccessType = [
     {
       value: 'RW',
-      help: $localize`Allows all operations`
+      help: `Allows all operations`
     },
     {
       value: 'RO',
-      help: $localize`Allows only operations that do not modify the server`
+      help: `Allows only operations that do not modify the server`
     },
     {
       value: 'NONE',
-      help: $localize`Allows no access at all`
+      help: `Allows no access at all`
     }
   ];
 
   nfsFsal: NfsFSAbstractionLayer[] = [
     {
       value: SUPPORTED_FSAL.CEPH,
-      descr: $localize`CephFS`,
+      descr: `CephFS`,
       disabled: false
     },
     {
       value: SUPPORTED_FSAL.RGW,
-      descr: $localize`Object Gateway`,
+      descr: `Object Gateway`,
       disabled: false
     }
   ];
@@ -95,7 +95,7 @@ export class NfsService extends ApiClient {
 
   lsDir(fs_name: string, root_dir: string): Observable<Directory> {
     if (!fs_name) {
-      return throwError($localize`Please specify a filesystem volume.`);
+      return throwError(`Please specify a filesystem volume.`);
     }
     return this.http.get<Directory>(`${this.uiApiPath}/lsdir/${fs_name}?root_dir=${root_dir}`);
   }

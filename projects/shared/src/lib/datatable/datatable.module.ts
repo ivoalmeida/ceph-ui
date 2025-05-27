@@ -48,83 +48,79 @@ import { CheckedTableFormComponent } from './checked-table-form/checked-table-fo
 import { TableDetailDirective } from './directives/table-detail.directive';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    NgbDropdownModule,
-    NgbTooltipModule,
-    PipesModule,
-    ComponentsModule,
-    RouterModule,
-    ReactiveFormsModule,
-    FormlyModule.forRoot({
-      types: [
-        { name: 'array', component: FormlyArrayTypeComponent },
-        { name: 'object', component: FormlyObjectTypeComponent },
-        { name: 'input', component: FormlyInputTypeComponent, wrappers: ['input-wrapper'] },
-        { name: 'textarea', component: FormlyTextareaTypeComponent, wrappers: ['input-wrapper'] },
-        { name: 'file', component: FormlyFileTypeComponent, wrappers: ['input-wrapper'] }
-      ],
-      validationMessages: [
-        { name: 'required', message: 'This field is required' },
-        { name: 'json', message: 'This field is not a valid json document' },
-        {
-          name: 'rgwRoleName',
-          message:
-            'Role name must contain letters, numbers or the ' +
-            'following valid special characters "_+=,.@-]+" (pattern: [0-9a-zA-Z_+=,.@-]+)'
-        },
-        {
-          name: 'rgwRolePath',
-          message:
-            'Role path must start and finish with a slash "/".' +
-            ' (pattern: (\u002F)|(\u002F[\u0021-\u007E]+\u002F))'
-        },
-        { name: 'file_size', message: 'File size must not exceed 4KiB' },
-        {
-          name: 'rgwRoleSessionDuration',
-          message: 'This field must be a number and should be a value from 1 hour to 12 hour'
-        }
-      ],
-      wrappers: [{ name: 'input-wrapper', component: FormlyInputWrapperComponent }]
-    }),
-    FormlyBootstrapModule,
-    TableModule,
-    ButtonModule,
-    IconModule,
-    CheckboxModule,
-    PaginationModule,
-    DialogModule,
-    ThemeModule,
-    SelectModule,
-    TagModule,
-    LayerModule
-  ],
-  declarations: [
-    TableComponent,
-    TableKeyValueComponent,
-    TableActionsComponent,
-    CRUDTableComponent,
-    TablePaginationComponent,
-    CrudFormComponent,
-    FormlyArrayTypeComponent,
-    FormlyInputTypeComponent,
-    FormlyObjectTypeComponent,
-    FormlyInputWrapperComponent,
-    FormlyFileTypeComponent,
-    FormlyFileValueAccessorDirective,
-    CheckedTableFormComponent,
-    TableDetailDirective
-  ],
-  exports: [
-    TableComponent,
-    TableKeyValueComponent,
-    TableActionsComponent,
-    CRUDTableComponent,
-    TablePaginationComponent,
-    CheckedTableFormComponent,
-    TableDetailDirective
-  ]
+    imports: [
+        CommonModule,
+        FormsModule,
+        NgbDropdownModule,
+        NgbTooltipModule,
+        PipesModule,
+        ComponentsModule,
+        RouterModule,
+        ReactiveFormsModule,
+        FormlyModule.forRoot({
+            types: [
+                { name: 'array', component: FormlyArrayTypeComponent },
+                { name: 'object', component: FormlyObjectTypeComponent },
+                { name: 'input', component: FormlyInputTypeComponent, wrappers: ['input-wrapper'] },
+                { name: 'textarea', component: FormlyTextareaTypeComponent, wrappers: ['input-wrapper'] },
+                { name: 'file', component: FormlyFileTypeComponent, wrappers: ['input-wrapper'] }
+            ],
+            validationMessages: [
+                { name: 'required', message: 'This field is required' },
+                { name: 'json', message: 'This field is not a valid json document' },
+                {
+                    name: 'rgwRoleName',
+                    message: 'Role name must contain letters, numbers or the ' +
+                        'following valid special characters "_+=,.@-]+" (pattern: [0-9a-zA-Z_+=,.@-]+)'
+                },
+                {
+                    name: 'rgwRolePath',
+                    message: 'Role path must start and finish with a slash "/".' +
+                        ' (pattern: (\u002F)|(\u002F[\u0021-\u007E]+\u002F))'
+                },
+                { name: 'file_size', message: 'File size must not exceed 4KiB' },
+                {
+                    name: 'rgwRoleSessionDuration',
+                    message: 'This field must be a number and should be a value from 1 hour to 12 hour'
+                }
+            ],
+            wrappers: [{ name: 'input-wrapper', component: FormlyInputWrapperComponent }]
+        }),
+        FormlyBootstrapModule,
+        TableModule,
+        ButtonModule,
+        IconModule,
+        CheckboxModule,
+        PaginationModule,
+        DialogModule,
+        ThemeModule,
+        SelectModule,
+        TagModule,
+        LayerModule,
+        TableComponent,
+        TableKeyValueComponent,
+        TableActionsComponent,
+        CRUDTableComponent,
+        TablePaginationComponent,
+        CrudFormComponent,
+        FormlyArrayTypeComponent,
+        FormlyInputTypeComponent,
+        FormlyObjectTypeComponent,
+        FormlyInputWrapperComponent,
+        FormlyFileTypeComponent,
+        FormlyFileValueAccessorDirective,
+        CheckedTableFormComponent,
+        TableDetailDirective
+    ],
+    exports: [
+        TableComponent,
+        TableKeyValueComponent,
+        TableActionsComponent,
+        CRUDTableComponent,
+        TablePaginationComponent,
+        CheckedTableFormComponent,
+        TableDetailDirective
+    ]
 })
 export class DataTableModule {
   constructor(private iconService: IconService) {

@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'cd-form-advanced-fieldset',
-  templateUrl: './form-advanced-fieldset.component.html',
-  styleUrls: ['./form-advanced-fieldset.component.scss']
+    selector: 'cd-form-advanced-fieldset',
+    templateUrl: './form-advanced-fieldset.component.html',
+    styleUrls: ['./form-advanced-fieldset.component.scss'],
+    standalone: true
 })
 export class FormAdvancedFieldsetComponent {
   @Input()

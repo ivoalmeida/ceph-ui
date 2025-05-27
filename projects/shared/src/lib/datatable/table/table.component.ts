@@ -16,7 +16,16 @@ import {
   ViewChild
 } from '@angular/core';
 
-import { TableHeaderItem, TableItem, TableModel, TableRowSize } from 'carbon-components-angular';
+import {
+  LayerModule,
+  PaginationModule,
+  TableHeaderItem,
+  TableItem,
+  TableModel,
+  TableModule,
+  TableRowSize,
+  ThemeModule
+} from 'carbon-components-angular';
 import _ from 'lodash';
 import { BehaviorSubject, Observable, of, Subject, Subscription } from 'rxjs';
 
@@ -31,7 +40,7 @@ import { CdTableSelection } from '@models/cd-table-selection';
 import { CdUserConfig } from '@models/cd-user-config';
 import { TimerService } from '@services/timer.service';
 import { TableActionsComponent } from '../table-actions/table-actions.component';
-import { TableDetailDirective } from '@directives/table-detail.directive';
+import { TableDetailDirective } from '../directives/table-detail.directive';
 import { filter, map } from 'rxjs/operators';
 import { CdSortDirection } from '@enum/cd-sort-direction';
 import { CdSortPropDir } from '@models/cd-sort-prop-dir';
@@ -42,9 +51,11 @@ type TPaginationOutput = { start: number; end: number };
 
 @Component({
   selector: 'cd-table',
+  imports: [TableModule, LayerModule, ThemeModule, PaginationModule],
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  standalone: true
 })
 export class TableComponent implements AfterViewInit, OnInit, OnChanges, OnDestroy {
   @ViewChild('tableCellBoldTpl', { static: true })
@@ -848,7 +859,7 @@ export class TableComponent implements AfterViewInit, OnInit, OnChanges, OnDestr
       const context = new CdTableFetchDataContext(() => {
         // Do we have to display the error panel?
         if (!!context.errorConfig.displayError) {
-          this.status = new TableStatus('danger', $localize`Failed to load data.`);
+          this.status = new TableStatus('danger', `Failed to load data.`);
         }
         // Force data table to show no data?
         if (context.errorConfig.resetData) {

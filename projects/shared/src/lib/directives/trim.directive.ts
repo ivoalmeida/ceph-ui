@@ -4,7 +4,8 @@ import { NgControl } from '@angular/forms';
 import _ from 'lodash';
 
 @Directive({
-  selector: '[cdTrim]'
+    selector: '[cdTrim]',
+    standalone: true
 })
 export class TrimDirective {
   constructor(private ngControl: NgControl) {}

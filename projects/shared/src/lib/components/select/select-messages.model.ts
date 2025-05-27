@@ -9,14 +9,14 @@ export class SelectMessages {
   noOptions: string;
 
   constructor(messages: {}) {
-    this.empty = $localize`No items selected.`;
+    this.empty = `No items selected.`;
     this.selectionLimit = {
-      tooltip: $localize`Deselect item to select again`,
-      text: $localize`Selection limit reached`
+      tooltip: `Deselect item to select again`,
+      text: `Selection limit reached`
     };
-    this.filter = $localize`Filter tags`;
-    this.add = $localize`Add badge`; // followed by " '{{filter.value}}'"
-    this.noOptions = $localize`There are no items available.`;
+    this.filter = `Filter tags`;
+    this.add = `Add badge`; // followed by " '{{filter.value}}'"
+    this.noOptions = `There are no items available.`;
 
     _.merge(this, messages);
   }

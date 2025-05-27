@@ -3,9 +3,10 @@ import { FieldWrapper } from '@ngx-formly/core';
 import { getFieldState } from '../helpers';
 
 @Component({
-  selector: 'cd-formly-input-wrapper',
-  templateUrl: './formly-input-wrapper.component.html',
-  styleUrls: ['./formly-input-wrapper.component.scss']
+    selector: 'cd-formly-input-wrapper',
+    templateUrl: './formly-input-wrapper.component.html',
+    styleUrls: ['./formly-input-wrapper.component.scss'],
+    standalone: true
 })
 export class FormlyInputWrapperComponent extends FieldWrapper {
   get helper(): string {

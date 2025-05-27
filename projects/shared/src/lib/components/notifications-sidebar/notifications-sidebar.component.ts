@@ -32,10 +32,11 @@ import { SummaryService } from '@services/summary.service';
 import { TaskMessageService } from '@services/task-message.service';
 
 @Component({
-  selector: 'cd-notifications-sidebar',
-  templateUrl: './notifications-sidebar.component.html',
-  styleUrls: ['./notifications-sidebar.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+    selector: 'cd-notifications-sidebar',
+    templateUrl: './notifications-sidebar.component.html',
+    styleUrls: ['./notifications-sidebar.component.scss'],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true
 })
 export class NotificationsSidebarComponent implements OnInit, OnDestroy {
   @HostBinding('class.active') isSidebarOpened = false;
@@ -176,7 +177,7 @@ export class NotificationsSidebarComponent implements OnInit, OnDestroy {
 
   silence(data: CdNotification) {
     const datetimeFormat = 'YYYY-MM-DD HH:mm';
-    const resource = $localize`silence`;
+    const resource = `silence`;
     const matcher: AlertmanagerSilenceMatcher = {
       name: 'alertname',
       value: data['title'].split(' ')[0],

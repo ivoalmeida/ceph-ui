@@ -3,9 +3,10 @@ import { Component, Input, OnChanges } from '@angular/core';
 import _ from 'lodash';
 
 @Component({
-  selector: 'cd-usage-bar',
-  templateUrl: './usage-bar.component.html',
-  styleUrls: ['./usage-bar.component.scss']
+    selector: 'cd-usage-bar',
+    templateUrl: './usage-bar.component.html',
+    styleUrls: ['./usage-bar.component.scss'],
+    standalone: true
 })
 export class UsageBarComponent implements OnChanges {
   @Input()
@@ -23,7 +24,7 @@ export class UsageBarComponent implements OnChanges {
   @Input()
   calculatePerc = true;
   @Input()
-  title = $localize`usage`;
+  title = `usage`;
   @Input()
   customLegend?: string;
   @Input()

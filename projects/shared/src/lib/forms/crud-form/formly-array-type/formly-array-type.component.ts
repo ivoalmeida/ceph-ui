@@ -8,9 +8,10 @@ import { forEach } from 'lodash';
 import { Icons } from '@enum/icons.enum';
 
 @Component({
-  selector: 'cd-formly-array-type',
-  templateUrl: './formly-array-type.component.html',
-  styleUrls: ['./formly-array-type.component.scss']
+    selector: 'cd-formly-array-type',
+    templateUrl: './formly-array-type.component.html',
+    styleUrls: ['./formly-array-type.component.scss'],
+    standalone: true
 })
 export class FormlyArrayTypeComponent extends FieldArrayType implements OnInit {
   icons = Icons;

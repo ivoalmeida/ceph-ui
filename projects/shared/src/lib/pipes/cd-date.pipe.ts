@@ -3,7 +3,8 @@ import _ from 'lodash';
 import moment from 'moment';
 
 @Pipe({
-  name: 'cdDate'
+    name: 'cdDate',
+    standalone: true
 })
 export class CdDatePipe implements PipeTransform {
   constructor() {}

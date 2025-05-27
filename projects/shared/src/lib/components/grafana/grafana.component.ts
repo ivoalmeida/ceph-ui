@@ -5,9 +5,10 @@ import { SettingsService } from '@api/settings.service';
 import { Icons } from '@enum/icons.enum';
 
 @Component({
-  selector: 'cd-grafana',
-  templateUrl: './grafana.component.html',
-  styleUrls: ['./grafana.component.scss']
+    selector: 'cd-grafana',
+    templateUrl: './grafana.component.html',
+    styleUrls: ['./grafana.component.scss'],
+    standalone: true
 })
 export class GrafanaComponent implements OnInit, OnChanges {
   grafanaSrc: SafeUrl;
@@ -43,107 +44,107 @@ export class GrafanaComponent implements OnInit, OnChanges {
   constructor(private sanitizer: DomSanitizer, private settingsService: SettingsService) {
     this.grafanaTimes = [
       {
-        name: $localize`Last 5 minutes`,
+        name: `Last 5 minutes`,
         value: 'from=now-5m&to=now'
       },
       {
-        name: $localize`Last 15 minutes`,
+        name: `Last 15 minutes`,
         value: 'from=now-15m&to=now'
       },
       {
-        name: $localize`Last 30 minutes`,
+        name: `Last 30 minutes`,
         value: 'from=now-30m&to=now'
       },
       {
-        name: $localize`Last 1 hour (Default)`,
+        name: `Last 1 hour (Default)`,
         value: 'from=now-1h&to=now'
       },
       {
-        name: $localize`Last 3 hours`,
+        name: `Last 3 hours`,
         value: 'from=now-3h&to=now'
       },
       {
-        name: $localize`Last 6 hours`,
+        name: `Last 6 hours`,
         value: 'from=now-6h&to=now'
       },
       {
-        name: $localize`Last 12 hours`,
+        name: `Last 12 hours`,
         value: 'from=now-12h&to=now'
       },
       {
-        name: $localize`Last 24 hours`,
+        name: `Last 24 hours`,
         value: 'from=now-24h&to=now'
       },
       {
-        name: $localize`Yesterday`,
+        name: `Yesterday`,
         value: 'from=now-1d%2Fd&to=now-1d%2Fd'
       },
       {
-        name: $localize`Today so far`,
+        name: `Today so far`,
         value: 'from=now%2Fd&to=now'
       },
       {
-        name: $localize`Day before yesterday`,
+        name: `Day before yesterday`,
         value: 'from=now-2d%2Fd&to=now-2d%2Fd'
       },
       {
-        name: $localize`Last 2 days`,
+        name: `Last 2 days`,
         value: 'from=now-2d&to=now'
       },
       {
-        name: $localize`This day last week`,
+        name: `This day last week`,
         value: 'from=now-7d%2Fd&to=now-7d%2Fd'
       },
       {
-        name: $localize`Previous week`,
+        name: `Previous week`,
         value: 'from=now-1w%2Fw&to=now-1w%2Fw'
       },
       {
-        name: $localize`This week so far`,
+        name: `This week so far`,
         value: 'from=now%2Fw&to=now'
       },
       {
-        name: $localize`Last 7 days`,
+        name: `Last 7 days`,
         value: 'from=now-7d&to=now'
       },
       {
-        name: $localize`Previous month`,
+        name: `Previous month`,
         value: 'from=now-1M%2FM&to=now-1M%2FM'
       },
       {
-        name: $localize`This month so far`,
+        name: `This month so far`,
         value: 'from=now%2FM&to=now'
       },
       {
-        name: $localize`Last 30 days`,
+        name: `Last 30 days`,
         value: 'from=now-30d&to=now'
       },
       {
-        name: $localize`Last 90 days`,
+        name: `Last 90 days`,
         value: 'from=now-90d&to=now'
       },
       {
-        name: $localize`Last 6 months`,
+        name: `Last 6 months`,
         value: 'from=now-6M&to=now'
       },
       {
-        name: $localize`Last 1 year`,
+        name: `Last 1 year`,
         value: 'from=now-1y&to=now'
       },
       {
-        name: $localize`Previous year`,
+        name: `Previous year`,
         value: 'from=now-1y%2Fy&to=now-1y%2Fy'
       },
       {
-        name: $localize`This year so far`,
+        name: `This year so far`,
         value: 'from=now%2Fy&to=now'
       },
       {
-        name: $localize`Last 2 years`,
+        name: `Last 2 years`,
         value: 'from=now-2y&to=now'
       },
       {
-        name: $localize`Last 5 years`,
+        name: `Last 5 years`,
         value: 'from=now-5y&to=now'
       }
     ];

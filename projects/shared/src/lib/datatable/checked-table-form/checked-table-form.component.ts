@@ -2,11 +2,14 @@ import { Component, Input, OnInit, TemplateRef, ViewChild } from '@angular/core'
 import { CdTableColumn } from '@models/cd-table-column';
 import { CdFormGroup } from '@forms/cd-form-group';
 import _ from 'lodash';
+import { TableComponent } from '../table/table.component';
 
 @Component({
   selector: 'cd-checked-table-form',
+  imports: [TableComponent],
   templateUrl: './checked-table-form.component.html',
-  styleUrls: ['./checked-table-form.component.scss']
+  styleUrls: ['./checked-table-form.component.scss'],
+  standalone: true
 })
 export class CheckedTableFormComponent implements OnInit {
   @Input() data: Array<any>;

@@ -9,8 +9,8 @@ describe('VerticalNavigationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [VerticalNavigationComponent]
-    }).compileComponents();
+    imports: [VerticalNavigationComponent]
+}).compileComponents();
 
     fixture = TestBed.createComponent(VerticalNavigationComponent);
     component = fixture.componentInstance;

@@ -19,9 +19,10 @@ import { ModalCdsService } from '@services/modal-cds.service';
 import { BaseModal } from 'carbon-components-angular';
 
 @Component({
-  selector: 'cd-crud-table',
-  templateUrl: './crud-table.component.html',
-  styleUrls: ['./crud-table.component.scss']
+    selector: 'cd-crud-table',
+    templateUrl: './crud-table.component.html',
+    styleUrls: ['./crud-table.component.scss'],
+    standalone: true
 })
 export class CRUDTableComponent implements OnInit {
   @ViewChild('badgeDictTpl')
@@ -120,7 +121,7 @@ export class CRUDTableComponent implements OnInit {
   delete() {
     const selectedKey = this.selection.first()[this.meta.columnKey];
     this.modalRef = this.modalService.show(DeleteConfirmationModalComponent, {
-      itemDescription: $localize`${this.meta.resource}`,
+      itemDescription: `${this.meta.resource}`,
       itemNames: [selectedKey],
       submitAction: () => {
         this.taskWrapper
@@ -167,8 +168,8 @@ export class CRUDTableComponent implements OnInit {
     this.selection.selected.forEach((row) => entities.push(row.entity));
     this.cephUserService.export(entities).subscribe((data: string) => {
       const modalVariables = {
-        titleText: $localize`Ceph user export data`,
-        buttonText: $localize`Close`,
+        titleText: `Ceph user export data`,
+        buttonText: `Close`,
         bodyTpl: this.authxEportTpl,
         showSubmit: true,
         showCancel: false,
