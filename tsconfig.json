@@ -19,18 +19,22 @@
     "baseUrl": "./",
     "paths": {
       "~/*": ["projects/shared/src/lib/*"],
-      "@components": ["projects/example-project/src/components"],
-      "shared": [
-        "./dist/shared"
-      ]
+      "@api/*": ["projects/shared/src/lib/api/*"],
+      "@classes/*": ["projects/shared/src/lib/classes/*"],
+      "@components/*": ["projects/shared/src/lib/components/*"],
+      "@datatable/*": ["projects/shared/src/lib/datatable/*"],
+      "@directives/*": ["projects/shared/src/lib/directives/*"],
+      "@enum/*": ["projects/shared/src/lib/enum/*"],
+      "@forms/*": ["projects/shared/src/lib/forms/*"],
+      "@models/*": ["projects/shared/src/lib/models/*"],
+      "@pipes/*": ["projects/shared/src/lib/pipes/*"],
+      "@services/*": ["projects/shared/src/lib/services/*"],
+      "@testing/*": ["projects/shared/src/lib/testing/*"]
     },
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
-    "lib": [
-      "ES2022",
-      "dom"
-    ]
+    "lib": ["ES2022", "dom"]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
